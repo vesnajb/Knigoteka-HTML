@@ -11,25 +11,25 @@
 		<ul>
 			<li>
 				<img src="assets/images/icons/heart.png">
-				<span>Листа на желби (0)</span>
+				<a href="#">Листа на желби (0)</a>
 			</li>
 			<li>
 				<img src="assets/images/icons/man-user.png">
-				<span>Мој профил</span>
+				<a href="#">Мој профил</a>
 				<img class="arrow" src="assets/images/icons/Arrow-down-menu.png">
 			</li>
 			<li>
-				<span>МКД</span>
+				<a href="#">МКД</a>
 				<img class="arrow" src="assets/images/icons/Arrow-down-menu.png">
 			</li>
 			<li>
 				<img src="assets/images/icons/mkLang.png">
-				<span>MK</span>
+				<a href="#">MK</span></a>
 				<img class="arrow" src="assets/images/icons/Arrow-down-menu.png">
 			</li>
 			<li>
 				<img src="assets/images/icons/shopping-cart.png">
-				<span>0 Производи - МКД 0.00</span>
+				<a href="#">0 Производи - МКД 0.00</a>
 			</li>
 		</ul>
 	</div>
@@ -70,6 +70,7 @@
 	</div>
 
 	<div class="slider">
+		<div class="slide_wrap">
 		<div class="slide">
 			<img class="bck1" src="assets/images/slide_1.png">
 			<div class="book_wrap">
@@ -84,43 +85,35 @@
 					</ul>
 				</div>
 			</div>
-			<div class="dots">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</div>
 		</div>
+		
 		<div class="slide">
 			<img class="bck2" src="assets/images/slide_2.png">
-			<div class="book_wrap">
-				<div class="book_shelf">
-					<img src="assets/images/shelf.png">
-				</div>
 				<div class="books">
 					<ul>
-						<img src="assets/images/book_shelf1.png">
+						<li><a href="#"><img src="assets/images/book_shelf1.png"></a></li>
+						<li><a href="#"><img src="assets/images/book_shelf2.png"></a></li>
+						<li><a href="#"><img src="assets/images/book_shelf3.png"></a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="dots">
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-			</div>			
-		</div>
-		<div class="slide">
-			<div class="action">
-				<span>
-					Акција 2+1
-				</span>
-				<span>
-					Плати 2, Добиј 1 Гратис
-				</span>
-				<button class="order">Нарачај</button>
-			</div>
 			
-		</div> -->
-		
+		<div class="slide">
+			<img class="bck3" src="assets/images/slide_3.png">
+			<div class="action">
+				<ul>
+					<li><h2>Акција 2+1</h2></li>
+					<li><h3>Плати 2, Добиј 1 Гратис</h3></li>
+					<li><button class="order"><a href="#">Нарачај</a></button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+		</div>		
+		</div>
 	</div>
 	<div class="cleaner">
 	</div>
@@ -155,46 +148,153 @@
 
 	<div class="cleaner">
 	</div>
+
 	<div class="choose">
 		<div class="header">
 			<h1>Одбери Ја Својата следна Книга</h1>
 			<hr width="200px">
 		</div>
 		<div class="book_slider">
-			<img class="icon-right" src="assets/images/icons/fast-forward-button-right.png">
-			<img class="icon-left" src="assets/images/icons/fast-forward-button-left.png">
+			<div class="choose_nav">
+				<img class="icon-right" src="assets/images/icons/fast-forward-button-right.png">
+				<img class="icon-left" src="assets/images/icons/fast-forward-button-left.png">
+			</div>
+
 			<div class="book_slides">
-			<div class="book1">
-				<img src="assets/images/book1.png">
-				<h3>Т.А.Ј.Н.А</h3>
-				<h3>Споделена</h3>
-				<h4>Л. Мари Аделин</h4>
-				<h2>Цена: 390 МКД</h2>
+				<div class="book_slide">
+				<div class="w3-display-container book1">
+					<img src="assets/images/book1.png">
+					<h3>Т.А.Ј.Н.А</h3>
+					<h3>Споделена</h3>
+					<h4>Л. Мари Аделин</h4>
+					<h2>Цена: 390 МКД</h2>
+					<div class="w3-display-hover buy">
+						<div class="heart">
+							<img class="icon-right" src="assets/images/icons/heart.png"></div>
+						<div class="cart">
+							<div class="cart_wrap">
+							<img class="icon-right" src="assets/images/icons/shopping-cart.png">
+							<h3>Во кошничка</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="book2">
+					<img src="assets/images/book2.png">
+					<h3>Дневникот на Сузана</h3>
+					<h3>за Николас</h3>
+					<h4>Џејмс Патерсон</h4>
+					<h2>Цена: 399 МКД</h2>
+				</div>
+				<div class="book3">
+					<img src="assets/images/book3.png">
+					<h3>Степскиот волк</h3>
+					<h4>Херман Хесе</h4>
+					<h2>Цена: 699 МКД</h2>
+				</div>
+				<!-- <div class="book4">
+					<img src="assets/images/book4.png">
+					<h3>Лов на богатство</h3>
+					<h4>Џон Лекроар</h4>
+					<h2>Цена: 300 МКД</h2>
+				</div> -->
+				</div>
+
+				<!-- <div class="book_slide">
+				<div class="book5">
+					<img src="assets/images/book4.png">
+					<h3>Лов на богатство</h3>
+					<h4>Џон Лекроар</h4>
+					<h2>Цена: 300 МКД</h2>
+				</div>
+				</div> -->
+		</div>
+		</div>
+	</div>
+		<div class="cleaner">
+		</div>
+	<div class="banner">
+			<img class="bkg" src="assets/images/banner_img.png">
+			<div class="text">
+				<ul>
+					<li>
+						<img src="assets/images/icons/book_icon.png">
+					</li>
+					<li>
+						<h1>20 Најпродавани Книги</h1>
+					</li>
+				</ul>
+				<div class="text_btn">
+					<h3>за <span>2017</span> година</h3>
+					<button><a href="#">Дознај повеќе</a></button>
+				</div>
 			</div>
-			<div class="book2">
-				<img src="assets/images/book2.png">
-				<h3>Дневникот на Сузана</h3>
-				<h3>за Николас</h3>
-				<h4>Џејмс Патерсон</h4>
-				<h2>Цена: 399 МКД</h2>
+		</div>
+	<div class="cleaner">
+	</div>
+	<div class="category">
+		<div class="header">
+			<h1>Најпопуларни категории</h1>
+			<hr width="200px">
+		</div>
+		<div class="cat_wrap">
+		<div class="categories">
+			<div class="first_cat">
+				<a href=""><img src="assets/images/drama.png"></a>
+				<h3>Драма</h3>
 			</div>
-			<div class="book3">
-				<img src="assets/images/book3.png">
-				<h3>Степскиот волк</h3>
-				<h4>Л. Мари Аделин</h4>
-				<h2>Цена: 699 МКД</h2>
+			<div class="first_cat">
+				<a href=""><img src="assets/images/romanse.png"></a>
+				<h3>Романса</h3>
 			</div>
-			<div class="book4">
-				<img src="assets/images/book4.png">
-				<h3>Лов на богатство</h3>
-				<h4>Џон Лекроар</h4>
-				<h2>Цена: 300 МКД</h2>
+			<div class="first_cat">
+				<a href=""><img src="assets/images/kids.png"></a>
+				<h3>Детски</h3>
 			</div>
-			<div class="book5">
-				<img src="assets/images/book4.png">
-				<h3>Лов на богатство</h3>
-				<h4>Џон Лекроар</h4>
-				<h2>Цена: 300 МКД</h2>
+			<div class="first_cat">
+				<a href=""><img src="assets/images/food.png"></a>
+				<h3>Храна</h3>
+			</div>
+		</div>
+		</div>
+		<div class="btn">
+		<a href="#"><button class="button">Повеќе Категории</button></a>
+		</div>
+	</div>
+	<div class="news_letter">
+		<h1>на време дознавај за нашите новитети</h1>
+		<div class="email_wrap">
+		<input type="email" name="email" placeholder="E-mail">
+		<button>Пријави се</button>
+		</div>
+	</div>
+	<div class="cleaner">
+	</div>
+	<div class="blog">
+		<div class="header">
+			<h1>Најнови настани</h1>
+			<hr width="200px">
+		</div>
+		<div class="blog_wrap">
+		<div class="blogs">
+			<div class="first_blog">
+				<a href=""><img src="assets/images/blog1.png"></a>
+				<h3>Пролетен Фестивал на книгата 2018</h3>
+				<h6>Март 2018</h6>
+				<h4>Книготека го најавува новиот Пролетен фестивал на книга 2018...</h4>
+			</div>
+			<div class="first_blog">
+				<a href=""><img src="assets/images/blog2.png"></a>
+				<h3>Промоција на “Задоволство”</h3>
+				<h6>Март 2018</h6>
+				<h4>Книготека ја промовира најновата книга на... </h4>
+			</div>
+			<div class="first_blog">
+				<a href=""><img src="assets/images/blog3.png"></a>
+				<h3>Попустите продолжуваат и во текот
+на Јануари</h3>
+				<h6>Март 2018</h6>
+				<h4>Книготека ги изненадува своите читатели!</h4>
 			</div>
 		</div>
 		</div>
