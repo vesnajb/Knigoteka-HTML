@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Книготека</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
 	<script src="https://use.fontawesome.com/6ee5636378.js"></script>
+	<link rel="favicon" href="assets/images/icons/favicon.png">
 </head>
 <body>
 	<div class="menu">
-		<ul>
+		<div class="menu_wrap">
+		<ul class="nav">
 			<li>
 				<i class="fa fa-heart"></i>
 				<h3>Листа на желби (0)</h3>
 			</li>
 			<li>
-				<select>
-					<option selected >Мој профил</option>
-					<option>Логирај се</option>
-					<option>Зачлени се</option>
-				</select>
+				<a href="#"><i class="fa fa-user"></i>Мој профил</a>
+      			  <ul>
+            		<li><a href="#"><i class="fa fa-key"></i>Логирај се</a></li>
+
+            		<li><a href="#"><i class="fa fa-user-plus"></i>Зачлени се</a></li>
+      			  </ul>
 			</li>
 			<li>
 				<select>
@@ -36,10 +40,13 @@
 				</select>
 			</li>
 			<li>
-				<img src="assets/images/icons/shopping-cart.png">
+				<i class="fa fa-shopping-cart"></i>
 				<h3>0 Производи - МКД 0.00</h3>
 			</li>
 		</ul>
+		</div>
+	</div>
+	<div class="cleaner">
 	</div>
 	<div class="main_menu">
 		<div class="main_menu_wrapper">
@@ -49,8 +56,7 @@
 			<div class="main_nav_wrap">
 				<ul class="main_nav">
 					<li><a href="#">Категории</a>
-						<div class="category">
-						<ul class="column">
+						<ul>
 							<li><a href="#">Белетристика</a></li>
 							<li><a href="#">Стручна литература</a></li>
 							<li><a href="#">Класична литература</a></li>
@@ -59,7 +65,7 @@
 							<li><a href="#">Бизнис</a></li>
 							<li><a href="#">Речници и лексикони</a></li>
 						</ul>
-						<ul class="column">
+						<!-- <ul>
 							<li><a href="#">Енциклопедии и атласи</a></li>
 							<li><a href="#">Карти и мапи</a></li>
 							<li><a href="#">Туризам</a></li>
@@ -68,7 +74,7 @@
 							<li><a href="#">Книги за млади</a></li>
 							<li><a href="#">Книги за деца</a></li>
 						</ul>
-						<ul class="column">
+						<ul>
 							<li><a href="#">Лектири</a></li>
 							<li><a href="#">Филозофија и религија</a></li>
 							<li><a href="#">Сувенири</a></li>
@@ -77,18 +83,18 @@
 							<li><a href="#">Стрипови</a></li>
 							<li><a href="#">Нотеси</a></li>
 						</ul>
-						<ul class="column">
+						<ul>
 							<li><a href="#">Друштвени игри и сложувалки</a></li>
 							<li><a href="#">Езотерија</a></li>
 							<li><a href="#">Живот</a></li>
 							<li><a href="#">Комплети</a></li>
 							<li><a href="#">Книги за 18+</a></li>
 						</ul>
-						</div>
+						 -->
 					</li>
 				<li>
 					<a href="#">Автори</a>
-					<ul class="autors">
+					<ul>
 						<li><a href="#">Домашни</a></li>
 						<li><a href="#">Балкански</a></li>
 						<li><a href="#">Европски</a></li>
@@ -99,18 +105,16 @@
 				<li><a href="#">Настани</a></li>
 				<li><a href="#">Акција</a></li>
 				<li><a href="#">Новитети</a></li>
-				<li><a href="#">Контакт</a></li>
 				<li>
 				   	<input autocomplete="off" type="text" name="search" placeholder="Пребарај..."/>
-				            	</form>
+				       	
 				            </li>
 				        </ul>
-				    </li>
-			</ul>
-			</div>
+				</div>
 		</div>
 	</div>
-	
+	<div class="cleaner">
+	</div>
 	<!-- <div class="search_bar">
 		
 	</div> -->
@@ -531,21 +535,34 @@
 			<ul class="first_column fourth">
 				<li><h2>Контакт</h2>
 				<hr></li>
-				<li>Адреса</li>
-				<li>1107 Јане Сандански</li>
-				<li>Работно време</li>
-				<li>Понеделник - Сабота</li>
-				<li>10 - 21 часот</li>
-				<li>Телефон</li>
-				<li>00389 70 123 456</li>
-				<li>E-mail</li>
-				<li>info@knigoteka.mk</li>
+				<li>
+					<ul>
+						<li>Адреса</li>
+						<li>1107 Јане Сандански</li>
+					</ul>
+					<ul>	
+					<li>Работно време</li>
+					<li>Понеделник - Сабота</li>
+					<li>10 - 21 часот</li>
+				</ul>
+				<ul>
+					<li>Телефон</li>
+					<li>00389 70 123 456</li>
+				</ul>
+				<ul>
+					<li>E-mail</li>
+					<li><a href="#">info@knigoteka.mk</a></li>
+				</ul>
 			</ul>
 		</div>
 		</div>
+		<div class="email_wrap">
+			<input type="email" name="email" placeholder="E-mail">
+			<button>Пријави се</button>
+		</div>
 	</div>
 	<div class="copyright">
-		
+		<h3>Copyright © 2018 Книготека Сите права се задржани</h3>
 	</div>
 	<script type="text/javascript" src="assets/script/index.js"></script>
 
