@@ -6,12 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+	<script src="https://use.fontawesome.com/6ee5636378.js"></script>
 </head>
 <body>
 	<div class="menu">
 		<ul>
 			<li>
-				<img src="assets/images/icons/heart.png">
+				<i class="fa fa-heart"></i>
 				<h3>Листа на желби (0)</h3>
 			</li>
 			<li>
@@ -110,19 +111,18 @@
 		</div>
 	</div>
 	
-	<div class="search_bar">
+	<!-- <div class="search_bar">
 		
-	</div>
-	<!-- <div class="cleaner">
 	</div> -->
-
+	
 	<div class="slider">
 		<div class="slide_wrap">
 		<div class="slide">
 			<img src="assets/images/slide_1.png">
 			<div class="book_wrap">
 				<div class="book">
-					<img src="assets/images/book1slider.png">
+					<a href="#"><img src="assets/images/book1slider.png">
+						</a>
 				</div>
 				<div class="name">
 					<ul>
@@ -158,13 +158,6 @@
 					</ul>
 				</div>
 			</div>
-			<!-- <div class="action">
-				<ul>
-					<li><h2>Акција 2+1</h2></li>
-					<li><h3>Плати 2, Добиј 1 Гратис</h3></li>
-					<li><button class="order"><a href="#">Нарачај</a></button></li>
-				</ul>
-			</div> -->
 		</div>
 		<div class="dots">
 				<span class="dot" onclick="currentSlide(1)"></span>
@@ -185,8 +178,6 @@
 				<h3>Бесплатна достава</h3>
 				<h4>За нарачки поголеми од 1000 МКД</h4>
 		</div>
-
-		
 		<div class="offer">
 			<div class="circle">
 				<a href="#"><img src="assets/images/icons/shop-tag.png"></a>
@@ -194,7 +185,6 @@
 				<h3>Попуст за членови</h3>
 				<h4>За сите членови следува попуст</h4>
 			</div>
-		
 		<div class="offer">
 			<div class="circle">
 				<a href="#"><img src="assets/images/icons/gift.png"></a>
@@ -206,79 +196,190 @@
 
 	<div class="cleaner">
 	</div>
-
 	<div class="choose">
 		<div class="header">
 			<h1>Одбери Ја Својата следна Книга</h1>
 			<hr width="200px">
 		</div>
 		<div class="book_slider">
-			<div class="choose_nav">
-				<img class="icon-right" src="assets/images/icons/fast-forward-button-right.png">
-				<img class="icon-left" src="assets/images/icons/fast-forward-button-left.png">
-			</div>
+			<a class="prev" onclick="changeBook(-1)">&#10094;</a>
+			<a class="next" onclick="changeBook(1)">&#10095;</a>
 
 			<div class="book_slides">
-				<div class="book_slide">
-				<div class="w3-display-container book1">
-					<img src="assets/images/book1.png">
-					<h3>Т.А.Ј.Н.А</h3>
-					<h3>Споделена</h3>
-					<h4>Л. Мари Аделин</h4>
-					<h2>Цена: 390 МКД</h2>
-					<div class="w3-display-hover buy">
-						<div class="heart">
-							<img class="icon-right" src="assets/images/icons/heart.png"></div>
-						<div class="cart">
-							<div class="cart_wrap">
-							<img class="icon-right" src="assets/images/icons/shopping-cart.png">
-							<h3>Во кошничка</h3>
-							</div>
+			
+				<div class="book">
+					<a href="#"><img src="assets/images/book1.png"></a>
+					<a href="#"><h3>Снеговите на љубовта</h3></a>
+					<a href="#"><h4>Нермин Безмен</h4></a>
+					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
 						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="book2">
-					<img src="assets/images/book2.png">
-					<h3>Дневникот на Сузана</h3>
-					<h3>за Николас</h3>
-					<h4>Џејмс Патерсон</h4>
-					<h2>Цена: 399 МКД</h2>
-				</div>
-				<div class="book3">
-					<img src="assets/images/book3.png">
-					<h3>Степскиот волк</h3>
-					<h4>Херман Хесе</h4>
-					<h2>Цена: 699 МКД</h2>
-				</div>
-				<!-- <div class="book4">
-					<img src="assets/images/book4.png">
-					<h3>Лов на богатство</h3>
-					<h4>Џон Лекроар</h4>
-					<h2>Цена: 300 МКД</h2>
-				</div> -->
+				<div class="book">
+					<a href="#"><img src="assets/images/book6.png"></a>
+					<a href="#"><h3>Дожд и хартија</h3></a>
+					<a href="#"><h4>Владимир Тасиќ</h4></a>
+					<a href="#"><h2>Цена: 249 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
 				</div>
 
-				<!-- <div class="book_slide">
-				<div class="book5">
-					<img src="assets/images/book4.png">
-					<h3>Лов на богатство</h3>
-					<h4>Џон Лекроар</h4>
-					<h2>Цена: 300 МКД</h2>
+				<div class="book">
+					<a href="#"><img src="assets/images/book3.png"></a>
+					<a href="#"><h3>Степскиот волк</h3></a>
+					<a href="#"><h4>Херман Хесе</h4></a>
+					<a href="#"><h2>Цена: 699 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
 				</div>
-				</div> -->
-		</div>
-		</div>
+				<div class="book">
+					<a href="#"><img src="assets/images/book4.png"></a>
+					<a href="#"><h3>Во еден момент</h3></a>
+					<a href="#"><h4>Гијом Мисо</h4></a>
+					<a href="#"><h2>Цена: 199 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="book">
+					<a href="#"><img src="assets/images/book5.png"></a>
+					<a href="#"><h3>Камениот мост</h3></a>
+					<a href="#"><h4>Александар Терехов</h4></a>
+					<a href="#"><h2>Цена: 500 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="book">
+					<a href="#"><img src="assets/images/book2.png"></a>
+					<a href="#"><h3>Проколнатиот</h3></a>
+					<a href="#"><h4>Селим Илери</h4></a>
+					<a href="#"><h2>Цена: 350 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="book">
+					<a href="#"><img src="assets/images/book7.png"></a>
+					<a href="#"><h3>Скршнување</h3></a>
+					<a href="#"><h4>Гербранд Бакер</h4></a>
+					<a href="#"><h2>Цена: 250 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="book">
+					<a href="#"><img src="assets/images/book8.png"></a>
+					<a href="#"><h3>Љубов низ солси</h3></a>
+					<a href="#"><h4>Вера Лилчиќ</h4></a>
+					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+				</div>
+				
 	</div>
-		<div class="cleaner">
-		</div>
+	<div class="cleaner">
+	</div>	
 	<div class="banner">
 			<img class="bkg" src="assets/images/banner_img.png">
 			<div class="text">
 				<div class="text1">
 					<img src="assets/images/icons/book_icon.png">
-					<h1>20 Најпродавани Книги</h1>	
-
-				</div>
+					<h1>20 Најпродавани Книги</h1>
+					</div>
 				<div class="text2">
 					<h3>за <span>2017</span> година</h3>
 					<button><a href="#">Дознај повеќе</a></button>
@@ -295,22 +396,38 @@
 		</div>
 		<div class="cat_wrap">
 		<div class="categories">
+			<a href="#">
 			<div class="first_cat">
+				<div class="cat_img">
 				<a href=""><img src="assets/images/drama.png"></a>
+				</div>
 				<h3>Драма</h3>
 			</div>
+			</a>
+			<a href="#">
 			<div class="first_cat">
+				<div class="cat_img">
 				<a href=""><img src="assets/images/romanse.png"></a>
+				</div>
 				<h3>Романса</h3>
 			</div>
+			</a>
+			<a href="#">
 			<div class="first_cat">
+				<div class="cat_img">
 				<a href=""><img src="assets/images/kids.png"></a>
+				</div>
 				<h3>Детски</h3>
 			</div>
+			</a>
+			<a href="#">
 			<div class="first_cat">
+				<div class="cat_img">
 				<a href=""><img src="assets/images/food.png"></a>
+				</div>
 				<h3>Храна</h3>
 			</div>
+			</a>
 		</div>
 		</div>
 		<div class="btn">
@@ -334,24 +451,30 @@
 		<div class="blog_wrap">
 		<div class="blogs">
 			<div class="first_blog">
+				<div class="blog_img">
 				<a href=""><img src="assets/images/blog1.png"></a>
-				<h3>Пролетен Фестивал на книгата 2018</h3>
+				</div>
+				<a href=""><h3>Пролетен Фестивал на книгата 2018</h3></a>
 				<h6>Март 2018</h6>
 				<h4>Книготека го најавува новиот Пролетен фестивал на книга 2018...</h4>
 				<h2><a href="#">Повеќе...</a></h2>
 			</div>
 			<div class="first_blog">
+				<div class="blog_img">
 				<a href=""><img src="assets/images/blog2.png"></a>
-				<h3>Промоција на “Задоволство”</h3>
-				<h6>Март 2018</h6>
+				</div>
+				<a href=""><h3>Промоција на “Задоволство”</h3></a>
+				<h6>Февруари 2018</h6>
 				<h4>Книготека ја промовира најновата книга на... </h4>
 				<h2><a href="#">Повеќе...</a></h2>
 			</div>
 			<div class="first_blog">
+				<div class="blog_img">
 				<a href=""><img src="assets/images/blog3.png"></a>
-				<h3>Попустите продолжуваат и во текот
-на Јануари</h3>
-				<h6>Март 2018</h6>
+				</div>
+				<a href=""><h3>Попустите продолжуваат и во текот
+на Јануари</h3></a>
+				<h6>Јануари 2018</h6>
 				<h4>Книготека ги изненадува своите читатели!</h4>
 				<h2><a href="#">Повеќе...</a></h2>
 			</div>
@@ -361,14 +484,64 @@
 	<div class="cleaner">
 	</div>
 	<div class="footer">
+		<div class="column_wrap">
 		<div class="column">
-			<ul class="first_column">
-				<li></li>
-				<li>Наша цел е на нашите потрошувачи да	им дадеме можност да уживаат во високо квалитетни услуги со одлични производи. Одберете ја својата омилена книга со Нас!</li>
-				<li></li>
-				<li></li>
-				<li></li>
+			<ul class="first_column first">
+				<li>
+					<div class="logo">
+						
+					</div>
+				</li>
+				<li><p>Наша цел е на нашите потрошувачи да	им дадеме можност да уживаат во високо квалитетни услуги со одлични производи. Одберете ја својата омилена книга со Нас!</p></li>
+				<li><h2>Следете не</h2></li>
+				<li><hr></li>
+				<li>
+					<ul class="social">
+						<a href="#">
+						<li><i class="fa fa-facebook-f"></i></li></a>
+						<a href="#"><li><i class="fa fa-twitter"></i></li></a>
+						<a href="#"><li><i class="fa fa-instagram"></i></li></a>
+					</ul>
+				</li>
 			</ul>
+		</div>
+		<div class="column">
+			<ul class="first_column second">
+				<li><h2>Информации
+				</h2><hr></li>
+				<li><a href="#">За Нас</a></li>
+				<li><a href="#">Контактирајте не</a></li>
+				<li><a href="#">Достава</a></li>
+				<li><a href="#">Интернационална достава</a></li>
+				<li><a href="#">Листа на желби</a></li>
+				<li><a href="#">Откажување нарачка</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<ul class="first_column third">
+				<li><h2>Пазарување</h2>
+				<hr></li>
+				<li><a href="#">Мои нарачки</a></li>
+				<li><a href="#">Колекции</a></li>
+				<li><a href="#">Подарок ваучер</a></li>
+				<li><a href="#">Помош</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<ul class="first_column fourth">
+				<li><h2>Контакт</h2>
+				<hr></li>
+				<li>Адреса</li>
+				<li>1107 Јане Сандански</li>
+				<li>Работно време</li>
+				<li>Понеделник - Сабота</li>
+				<li>10 - 21 часот</li>
+				<li>Телефон</li>
+				<li>00389 70 123 456</li>
+				<li>E-mail</li>
+				<li>info@knigoteka.mk</li>
+			</ul>
+		</div>
 		</div>
 	</div>
 	<div class="copyright">
