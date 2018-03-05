@@ -1,0 +1,415 @@
+body, html{
+	padding:0;
+	margin:0;
+	font-family: 'roboto';
+	box-sizing:border-box;
+}
+.menu{
+	width:100%;
+	padding: 15px 0px;
+	background-color: #e9e9e9;
+	margin:0;
+	color:#606060;
+	display:inline-block;
+	box-sizing: border-box;
+}
+.menu .menu_wrap{
+	margin: 0;
+	padding: 0;
+	float:right;
+	box-sizing: border-box;
+	padding-right: 6.25%;
+}
+.menu .menu_wrap .nav{
+	list-style: none;
+	margin: 0;
+    
+}
+.menu .menu_wrap .nav li{
+	float: left;
+    position: relative;
+	margin: 0 10px;
+	padding: 0;
+}
+.menu .menu_wrap .nav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+	font-weight: 400;
+	color: #606060;
+	margin: 0;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.menu .menu_wrap .nav a:hover {
+    color: #e74c3c;
+    background-color: #e9e9e9;
+}
+/*--- DROPDOWN ---*/
+.menu .menu_wrap .nav ul {
+	margin: 0;
+	padding: 0;
+    background-color: #e9e9e9; 
+   	list-style: none;
+    position: absolute;
+    left: -9999px; 
+    z-index: 10;
+}
+.menu .menu_wrap .nav ul li {
+    float: none;
+    margin: 0;
+	padding-top: 20px;
+}
+.menu .menu_wrap .nav ul li:last-child{
+	padding-bottom: 15px;
+}
+.menu .menu_wrap .nav ul a {
+    white-space: nowrap;
+
+}
+.menu .menu_wrap .nav ul a i{
+	color:#828282;
+	font-size: 15px;
+}
+
+.menu .menu_wrap .nav li:hover ul { 
+    left: 0; 
+}
+.menu .menu_wrap .nav li:hover a { 
+    background-color: #e9e9e9;
+  } 
+  .menu .menu_wrap .nav li a:hover i{
+  	color: #e74c3c;
+  }
+.menu .menu_wrap .nav li:hover ul a { 
+    text-decoration: none;
+}
+.menu .menu_wrap .nav li:hover ul li a:hover { 
+    background-color: #e9e9e9;
+}
+
+.menu ul li:hover i{
+	color:#e74c3c;
+}
+.menu ul img{
+	color:#606060;
+	width:19px;
+	height:19px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+.menu ul i{
+	color:#828282;
+	font-size: 15px;
+	padding:0 7px;
+	float: left;
+}
+.menu .arrow{
+	width:15px;
+	height:13px;
+}
+
+.menu h3{
+	font-size: 14px;
+	font-weight: 400;
+	color: #606060;
+	margin: 0;
+	cursor: pointer;
+	float: left;
+}
+.menu h3:hover{
+	color:#e74c3c;
+} 
+.menu ul li .coin{
+	width: 17px;
+	height: 16px;
+}
+.menu ul li select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+	background-color: #e6e6e6;
+	color: #606060;
+	font-size: 14px;
+	padding: 0 10px;
+	font-family: 'roboto';
+}
+.menu ul li select option{
+	padding: 10px 0;
+}
+
+.menu ul li select:hover {
+	cursor: pointer;
+	color:#e74c3c;
+}
+
+.main_menu{ 
+	width:100%;
+	background-color: #ffffff;
+}
+.main_menu_wrapper{
+	width:90%;
+	margin:0px auto;
+}
+.main_menu .logo{
+	float:left;
+	margin:0;
+	width:;
+}
+.main_menu .logo a{
+	width:150px;
+	height:74px;
+	margin:0;
+	padding: 0;
+	background:url("../images/knigoteka-logo.png");
+	display: inline-block;
+	background-size: 100%;
+}
+.main_menu .main_nav_wrap{
+	float:right;
+
+}
+.main_menu .main_nav_wrap .main_nav{
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+    z-index: 5;
+    
+}
+
+.main_menu .main_nav_wrap .main_nav li{
+	float:left;
+	margin: 0 30px;
+	position: relative;
+	padding: 0;
+}
+.main_menu .main_nav_wrap .main_nav li:nth-child(3) a{
+	color:#e74c3c;
+}
+.main_menu .main_nav_wrap .main_nav li a{
+	text-decoration: none;
+	color:#606060;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+	align-items:center;
+	padding: 30px 0;
+}
+.main_menu .main_nav_wrap .main_nav li a:hover{
+	color:#e74c3c;
+}
+.main_menu .main_nav_wrap .main_nav ul{
+	background-color: #fff;
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main_menu .main_nav_wrap .main_nav ul li{
+	padding: 0;
+	float: none;
+	margin:0;
+	padding-top: 20px;
+	
+}
+.main_menu .main_nav_wrap .main_nav ul li:last-child{
+	padding-bottom: 20px;
+}
+.main_menu .main_nav_wrap .main_nav ul li a{
+	white-space: nowrap;
+	font-size: 14px;
+	text-transform: none;
+	
+}
+.main_menu .main_nav_wrap .main_nav li:hover ul{
+	left: 0;
+	padding: 0;
+	margin:0;
+}
+.main_menu .main_nav_wrap .main_nav li:hover ul a{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	/*padding:10px 30px;*/
+}
+.main_menu .main_nav_wrap .main_nav li:hover ul li a:hover{
+	background-color:#ffffff;
+}
+.main_menu .main_nav_wrap .main_nav li input{
+	padding: 28px 0;
+}
+.main_menu .main_nav_wrap .main_nav li input .search{
+	width:24px;
+	height:24px;
+	padding: 5px 0;
+	position: absolute;
+}
+.main_menu .main_nav_wrap .main_nav li input[type=text] {
+  float:right;
+  right: 0;
+  width: 45px;
+  padding: 0;
+  box-sizing: border-box;
+  border:none;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  background-image: url("../images/icons/search.png");
+  background-position: 10px 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: relative;
+  margin-top: 19px;
+  cursor: pointer;
+}
+.main_menu .main_nav_wrap .main_nav li input[type=text]:focus {
+  width: 300px;
+  border: 1px solid #606060;
+}
+
+.cleaner{
+	clear: both;
+}
+.blog_bck{
+	width:100%;
+	background-color: #e9e9e9;
+	height: 2000px;
+}
+.blog_bck .blog_img{
+	width:60%;
+	height: 400px;
+	box-sizing: border-box;
+	float:left;
+	margin-left: 5%;
+	margin-top:60px;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+.blog_bck .blog_img img{
+		background-size: cover;
+ 	width: 100%;
+  	height: 100%;
+  	-webkit-transition: 2s ease-out;
+  	-moz-transition: 2s ease-out;
+  	-o-transition: 2s ease-out;
+  	-ms-transition: 2s ease-out;
+  	transition: 2s ease-out;
+  	margin: 0;
+  	cursor: pointer;
+}
+.blog_bck .blog_img:hover img{
+	-webkit-transition: 2s ease-out;
+     -moz-transition: 2s ease-out;
+     -o-transition: 2s ease-out;
+     -ms-transition: 2s ease-out;
+     transition: 2s ease-out;
+      -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+}
+.blog_bck .prev_blogs{
+	float:right;
+	width:28%;
+	margin-right: 5%;
+}
+.blog_bck .prev_blogs .blog{
+	width:100%;
+	background-color:#ffffff;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin:60px 0;
+}
+.blog_bck .prev_blogs ul{
+	list-style: none;
+	margin: 0;
+}
+.blog_bck .prev_blogs .blog .blog1_img{
+	width:250px;
+	height: 200px;
+	overflow: hidden;
+	margin:0 auto;
+	margin-top:50px;
+
+}
+.blog_bck .prev_blogs .blog a .blog1_img img{
+	background-size: cover;
+ 	width: 100%;
+  	height: 100%;
+  	-webkit-transition: 2s ease-out;
+  	-moz-transition: 2s ease-out;
+  	-o-transition: 2s ease-out;
+  	-ms-transition: 2s ease-out;
+  	transition: 2s ease-out;
+  	margin: 0;
+}
+.blog_bck .prev_blogs .blog .blog1_img:hover img{
+	-webkit-transition: 2s ease-out;
+     -moz-transition: 2s ease-out;
+     -o-transition: 2s ease-out;
+     -ms-transition: 2s ease-out;
+     transition: 2s ease-out;
+      -webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
+}
+.blog_bck .prev_blogs .blog h3{
+	margin: 20px 0 15px 0;
+	text-align: center;
+}
+.blog_bck .prev_blogs .blog a{
+	text-decoration: none;
+	color:#303030;
+	font-size: 16px;
+	font-weight: 400;
+}
+.blog_bck .prev_blogs .blog a:hover{
+	color: #e74c3c;
+}
+.blog_bck .prev_blogs .blog h4{
+	text-align: left;
+	font-size: 14px;
+	color:#606060;
+	margin:0 0 40px 0;
+	text-align: center;
+	font-weight: 400;
+}
+.blog_bck .blog_text{
+	width:60%;
+	margin-bottom: 60px;
+	margin-left: 5%;
+}
+.blog_bck .blog_text h2{
+	color:#303030;
+	font-size: 24px;
+	font-weight: 500;
+	margin:0;
+}
+.blog_bck .blog_text h4{
+	font-size: 14px;
+	color:#606060;
+	font-weight: 400;
+	margin:15px 0 30px 0;
+}
+.blog_bck .blog_text h3{
+	color:#303030;
+	font-size: 16px;
+	font-weight: 400;
+}
+.blog_bck .blog_text hr{
+	width:100%;
+	border:2px solid #fff;
+	margin-top: 44px;
+	margin-bottom: 44px;
+}
