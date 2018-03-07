@@ -12,10 +12,10 @@ function currentSlide(index) {
        slides[i].style.display = "none";  
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
+        dots[i].className = dots[i].className.replace(" active", "");
           }
         slides[index-1].style.display = "flex";  
-        dots[index-1].className += "active";
+        dots[index-1].className += " active";
 
 
    }
