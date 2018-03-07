@@ -1,0 +1,26 @@
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+input[type=text] {
+  display:block;
+  margin: 0 0 0 auto;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 100%;
+}
+
+
+Just align it to the right of its container element. Either change the display attribute to block and set the right and left margins to 0 and auto, or keep it as an inline element and apply text-align: right to the container block.

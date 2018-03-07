@@ -395,21 +395,40 @@ body, html{
 	font-size: 24px;
 	font-weight: 500;
 	margin:0;
+	margin-left: 20px;
 }
 .blog_bck .blog_text h4{
 	font-size: 14px;
 	color:#606060;
 	font-weight: 400;
-	margin:15px 0 30px 0;
+	margin:15px 0 30px 20px;
 }
 .blog_bck .blog_text h3{
 	color:#303030;
 	font-size: 16px;
 	font-weight: 400;
+	margin-left: 20px;
 }
 .blog_bck .blog_text hr{
 	width:100%;
 	border:2px solid #fff;
 	margin-top: 44px;
 	margin-bottom: 44px;
+}
+.similar_books{
+	width:60%;
+}
+.similar_books .similar_book{
+	width:30%;
+	background-color: #fff;
+}
+.similar_books .similar_book .book_wrap{
+	width:74.78%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.similar_books .similar_book .book_wrap img{
+	width: 100%;
+	height: 100%
+	background-size: cover;
 }
