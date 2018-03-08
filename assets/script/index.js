@@ -17,7 +17,6 @@ function currentSlide(index) {
         slides[index-1].style.display = "flex";  
         dots[index-1].className += " active";
 
-
    }
 
 function showSlides() {
