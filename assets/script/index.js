@@ -49,19 +49,20 @@ var marginPosition = 0;
    function changeBook(n){
     if(n<0){
         if(marginPosition==0){
-            marginPosition=0;
+            marginPosition -= 2400;
+            document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
         }else{
-        marginPosition += 418;
+        marginPosition += 480;
         document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
         }
     }else{
-        marginPosition -= 418;
+        marginPosition -= 480;
         document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
     }
-    if(marginPosition > 2700){
+    if(marginPosition > 2400){
         marginPosition = 0;
         document.querySelector(".book_slides").style.marginLeft = 0;
-    }else if(marginPosition < -2500){
+    }else if(marginPosition < -2400){
         marginPosition = 0;
         document.querySelector(".book_slides").style.marginLeft = 0;
     } 
