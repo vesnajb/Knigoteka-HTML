@@ -68,16 +68,16 @@ var marginPosition = 0;
    };
 
 
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-// function changeBook(n){
-//         if (marginPosition > - 2926){
-//             marginPosition -= 418;
-//             document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
-//         }else{
-//             marginPosition = 0;
-//             document.querySelector(".book_slides").style.marginLeft = 0;
-//         }
-//         setTimeout(changeBook, 3000);
-//     };
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
