@@ -132,12 +132,13 @@
 	<div class="bck_category">
 	<div class="categories">
 		<ul>
-			<li class="fiction" onclick="display();return false;"><a href="#">Белетристика</a></li>
-			<li><a href="#">Стручна литература</a></li>
-			<li><a href="#">Класична литература</a></li>
-			<li><a href="#">Психологија</a></li>
-			<li><a href="#">Поезија</a></li>
-			<li><a href="#">Бизнис</a></li>
+			<li class="category" onclick="display(0)"><a nohref>Категории</a></li>
+			<li class="fiction" onclick="display(1)"><a nohref>Белетристика</a></li>
+			<li class="strucna" onclick="display(2)"><a nohref>Стручна литература</a></li>
+			<li class="classic" onclick="display(3)"><a href="#">Класична литература</a></li>
+			<li class="psiho" onclick="display(4)"><a href="#">Психологија</a></li>
+			<li class="poetry" onclick="display(5)"><a href="#">Поезија</a></li>
+			<li class="bussines" onclick="display(6)"><a href="#">Бизнис</a></li>
 			<li><a href="#">Речници и лексикони</a></li>
 			<li><a href="#">Енциклопедии и атласи</a></li>
 			<li><a href="#">Карти и мапи</a></li>
@@ -162,7 +163,7 @@
 		
 	</div>
 	<div class="books">
-		<div class="book fiction">
+		<div class="book fiction category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook1.png"">
@@ -188,7 +189,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book strucna category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook2.png"">
@@ -214,7 +215,7 @@
 						</a>
 			</div>
 			</div>
-			<div class="book fiction third">
+			<div class="book fiction category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook3.png"">
@@ -240,7 +241,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book strucna category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook4.png"">
@@ -266,7 +267,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book fiction">
+			<div class="book fiction category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook5.png"">
@@ -292,7 +293,7 @@
 						</a>
 			</div>
 			</div>
-			<div class="book third">
+			<div class="book category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook6.png"">
@@ -318,7 +319,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook7.png"">
@@ -344,7 +345,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook8.png"">
@@ -370,7 +371,7 @@
 						</a>
 			</div>
 			</div>
-			<div class="book third">
+			<div class="book category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook9.png"">
@@ -396,7 +397,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook10.png"">
@@ -422,7 +423,7 @@
 						</a>
 					</div>
 			</div>
-			<div class="book">
+			<div class="book category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook11.png"">
@@ -448,7 +449,7 @@
 						</a>
 			</div>
 			</div>
-			<div class="book third">
+			<div class="book category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/book_shelf1.png"">
@@ -554,6 +555,7 @@
 	<div class="copyright">
 		<h3>Copyright © 2018 Книготека Сите права се задржани</h3>
 	</div>
+	<script type="text/javascript" src="assets/script/index2.js"></script>
 	</body>
 	
 	</html>
