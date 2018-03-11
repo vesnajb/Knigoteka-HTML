@@ -734,34 +734,46 @@ body, html{
 	font-weight: 500;
 }
 
-.cleaner{
+/*.cleaner{
 	clear: both;
-}
-.banner{
+}*/
+/*.banner{
 	width:100%;
 	height: 400px;
+}*/
+.parallax_one {
+    /* The image used */
+    background-image: url(../images/banner.png);
+    /*opacity:0.5;*/
+    /* Full height */
+     min-height: 400px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding-top:80px;
+    box-sizing: border-box;
+    width:100%;
 }
-.banner .bkg{
-	width:100%;
-	height: 400px;
-	position: absolute;
-}
-.banner .text{
+
+
+.parallax_one .text{
 	width:540px;
 	margin-left: 15%;
-	position: relative;
-	top:100px;
+	
 }
-.banner .text .text1{
+.parallax_one .text .text1{
 	width:540px;
 	height: 80px;
 }
-.banner .text .text1 img{
+.parallax_one .text .text1 img{
 	width:75px;
 	height: 75px;
 	float:left;
 }
-.banner .text .text1 h1{
+.parallax_one .text .text1 h1{
 	float:left;
 	font-size: 36px;
 	color:#fff;
@@ -769,13 +781,13 @@ body, html{
 	margin:0 0 0 20px;
 	padding-top:17px;
 }
-.banner .text .text2{
+.parallax_one .text .text2{
 	width:100%;
 	text-align: right;
 	margin-left: 20px;
 
 }
-.banner .text .text2 h3{
+.parallax_one .text .text2 h3{
 	font-size: 36px;
 	color:#fff;
 	font-weight: 300;
@@ -783,14 +795,14 @@ body, html{
 	margin-right: 25px;
 	margin-bottom: 40px;
 }
-.banner .text .text2 span{
+.parallax_one .text .text2 span{
 	color:#303030;
 	font-size: 36px;
 	font-weight: 300;
 
 }
 
-.banner .text .text2 button{
+.parallax_one .text .text2 button{
 	width:200px;
 	height: 50px;
 	background-color: #e74c3c;
@@ -799,11 +811,11 @@ body, html{
 	text-align: center;
 	margin-right: 50px;
 }
-.banner .text .text2 button:hover{
+.parallax_one .text .text2 button:hover{
 	transform: scale(1.05,1.05);
 	transition: all 1s ease-in-out;
 }
-.banner .text .text2 button a{
+.parallax_one .text .text2 button a{
 	text-decoration: none;
 	color:#fff;
 	font-size: 20px;
@@ -906,13 +918,19 @@ body, html{
 	transform: scale(1.05);
 	transition: all 1s ease-in-out;
 }
-.news_letter{
-	background-color: #e74c3c;
-	width:100%;
-	height: 270px;
-	box-sizing: border-box;
+.parallax_two{
+	background-image: url(../images/news.png);
+    min-height: 270px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    box-sizing: border-box;
+    width:100%;
 }
-.news_letter h1{
+
+.parallax_two h1{
 	padding-top:60px;
 	margin:0;
 	text-align: center;
@@ -922,24 +940,24 @@ body, html{
 	letter-spacing: 2px;
 	color: #fff;
 }
-.news_letter .email_wrap{
+.parallax_two .email_wrap{
 	width:100%;
 	text-align: center;
 	margin-top:40px;
 }
-.news_letter .email_wrap input{
+.parallax_two .email_wrap input{
 	border-radius: 5px 0 0 5px;
 	margin:auto;
 	border:none;
 	width:450px;
 	height: 50px;
 	}
-.news_letter .email_wrap input::placeholder{
+.parallax_two .email_wrap input::placeholder{
 	color: #606060;
 	padding-left: 20px;
 	font-size: 18px;
 }
-.news_letter .email_wrap button{
+.parallax_two .email_wrap button{
 	border-radius: 0 5px 5px 0;
     margin-left: -4px;
     border: none;

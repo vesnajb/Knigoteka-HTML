@@ -256,17 +256,12 @@ body, html{
 	padding-top:20px;
 }
 .main_menu .main_nav_wrap .main_nav li:first-child .content li:last-child{
-	/*padding-bottom: 20px;*/
 	width:120px;
 	padding-right: 0;
 }
 .main_menu .main_nav_wrap .main_nav li:first-child .content li:last-child .column_menu li{
-	/*padding-bottom: 20px;*/
 	width:120px;
 	padding-right: 0;
-}
-.main_menu .main_nav_wrap .main_nav li:nth-child(6) a{
-	color:#e74c3c;
 }
 .main_menu .main_nav_wrap .main_nav li:nth-child(2) .content{
 	width:180px;
@@ -282,7 +277,7 @@ body, html{
 	font-size: 14px;
 	text-transform: none;
 }
-.main_menu .main_nav_wrap .main_nav li:first-child .content li .column_menu:hover a{
+.main_menu .main_nav_wrap .main_nav li:first-child .content li .column_menu a:hover{
 	color:#e74c3c;
 }
 .main_menu .main_nav_wrap .main_nav li:hover .content{
@@ -350,7 +345,7 @@ body, html{
 }
 .parallax {
     /* The image used */
-    background-image: url(../images/contact4.png);
+    background-image: url(../images/contact.png);
     /*opacity:0.5;*/
     /* Full height */
      min-height: 300px; 
@@ -368,7 +363,7 @@ body, html{
 	text-align: center;
 	margin:0;
 	font-size: 28px;
-	font-weight: 300;
+	font-weight: 400;
 	color:#e74c3c;
 	text-transform: uppercase;
 	letter-spacing: 2px;
