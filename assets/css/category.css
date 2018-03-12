@@ -429,7 +429,7 @@ body, html{
 	width:74.78%;
 	overflow: hidden;
 	margin:0 auto;
-	padding: 30px 30px 0 30px;
+	padding: 45px 30px 0 30px;
 }
 .books .book:hover .book_wrap{
 	transform: scale(1.05,1.05);
@@ -445,13 +445,13 @@ body, html{
 	 transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
 }
 .books .book .buy{
-	width:20.5%;
+	width:20.88%;
 	height: 42px;
 	background-color: #e0dae2;
 	box-sizing: border-box;
 	position: absolute;
 	visibility: hidden;
-	margin-top: -175px;
+	margin-top: -170px;
 	display: table-cell;
     vertical-align: middle;
 }
@@ -469,7 +469,7 @@ body, html{
 .books .book .buy .heart a i{
 	width:19px;
 	height: 18px;
-	margin:16% 38%;
+	margin:10% 40%;
 	color:#e74c3c;
 
 }	
@@ -480,7 +480,7 @@ body, html{
 	color:#ffffff;
 }
 .books .book .buy .cart{
-	width:70%;
+	width:70.25%;
 	float:left;
 	margin:0 auto;
 	text-align: center;
@@ -492,10 +492,10 @@ body, html{
 	font-size: 18px;
 	color:#e74c3c;
 	float:left;
-	margin:13px 0 13px 15%;
+	margin:13px 0 13px 20%;
 }
 .books .book .buy .cart h3{
-	margin:13px 0 0 11%;
+	margin:13px 0 0 2%;
 	padding: 0;
 	font-size: 14px;
 	color:#e74c3c;
