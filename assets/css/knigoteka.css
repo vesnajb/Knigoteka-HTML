@@ -432,7 +432,7 @@ body, html{
 	display: inline-block;
 	transition: background-color 0.8s ease;
 }
-.slider .slide_wrap .dot:hover{
+.slider .slide_wrap .active, .dot:hover{
 	background-color:#e74c3c;
 }
 .slider .slide_wrap .dots{
@@ -742,12 +742,8 @@ body, html{
 	height: 400px;
 }*/
 .parallax_one {
-    /* The image used */
     background-image: url(../images/banner.png);
-    /*opacity:0.5;*/
-    /* Full height */
-     min-height: 400px; 
-    /* Create the parallax scrolling effect */
+    min-height: 400px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -755,7 +751,7 @@ body, html{
     display: block;
     padding-top:80px;
     box-sizing: border-box;
-    width:100%;
+   /* width:100%;*/
 }
 
 
@@ -822,7 +818,6 @@ body, html{
 }
 .category{
 	width:100%;
-	height: 527px;
 }
 .category .header h1{
 	padding:60px 0px 0px 0px;
@@ -840,8 +835,7 @@ body, html{
 }
 .category .cat_wrap{
 	width:100%;
-	height: 260px;
-	
+		
 }
 .category .cat_wrap .categories{
 	width:94%;
@@ -886,7 +880,7 @@ body, html{
 	font-size: 16px;
 	color:#303030;
 	letter-spacing: 2px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 	cursor: pointer;
 }
 .category .cat_wrap .categories .first_cat h3:hover{
@@ -894,7 +888,6 @@ body, html{
 }
 .category .btn{
 	width: 100%;
-	height: 110px;
 	display: inline-block;
 }
 .category a{
@@ -920,18 +913,18 @@ body, html{
 }
 .parallax_two{
 	background-image: url(../images/news.png);
-    min-height: 270px; 
+    min-height: 350px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
     box-sizing: border-box;
-    width:100%;
+    
 }
 
 .parallax_two h1{
-	padding-top:60px;
+	padding-top:80px;
 	margin:0;
 	text-align: center;
 	font-size: 30px;
@@ -943,7 +936,7 @@ body, html{
 .parallax_two .email_wrap{
 	width:100%;
 	text-align: center;
-	margin-top:40px;
+	margin-top:60px;
 }
 .parallax_two .email_wrap input{
 	border-radius: 5px 0 0 5px;
@@ -1090,7 +1083,6 @@ body, html{
 	padding-top:4px;
 	box-sizing: border-box;
 }
-
 /*footer*/
 .footer{
 	width:100%;
@@ -1129,17 +1121,14 @@ body, html{
 .footer .column_wrap .column .first_column li h2{
 	font-size: 16px;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 300;
 	letter-spacing: 1px;
 }
-.footer .column_wrap .column .first li h2{
-	margin: 0 0 0 40px;
 
-}
 .footer .column_wrap .column .first_column .social{
 	list-style: none;
 	padding: 0;
-	/*margin-left: 40px;*/
+	margin: 0;
 }
 .footer .column_wrap .column .second{
 	margin-left: 30px;
@@ -1163,7 +1152,7 @@ body, html{
 	height: 40px;
 	border-radius: 50%;
 	background-color: #ffffff;
-	margin:0 10px;
+	margin-right: 12px;
 	box-sizing: border-box;
 	text-align: center;
 	padding-top:8px;
@@ -1176,15 +1165,12 @@ body, html{
 	color: #e74c3c;
 	font-size: 24px;
 	text-align: center;
-
-	
-	
 }
 .footer .column_wrap .column .first li hr{
 	width:70px;
 	border:1px solid #e74c3c;
 	margin-bottom: 20px;
-	margin-left: 52px;
+	margin-left: 13px;
 }
 .footer .column_wrap .column .second li hr{
 	width:70px;
@@ -1242,16 +1228,16 @@ body, html{
 	color: #e74c3c;
 }
 .footer .email_wrap{
-	width:30%;
+	width:40%;
 	bottom: 50px;
-	left:40%;
+	left:33%;
 	position: absolute;
 }
 .footer .email_wrap input{
 	border-radius: 5px 0 0 5px;
 	margin:auto;
 	border:none;
-	width:200px;
+	width:240px;
 	height: 30px;
 }
 .footer .email_wrap input::placeholder{
@@ -1287,4 +1273,23 @@ body, html{
 	color:#ffffff;
 	font-weight: 400;
 	padding: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width:20px;
+  height: 20px;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+ }
+#myBtn i{
+	font-size: 35px;
+	color:#606060;
+}
+#myBtn:hover i{
+  color: #e74c3c;
 }

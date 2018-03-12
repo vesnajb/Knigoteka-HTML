@@ -500,6 +500,10 @@ body, html{
 	margin-bottom: 30px;
 	border-radius: 5px;
 }
+.form input:hover{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+}
 .form input::placeholder{
 	padding-left: 20px;
 	font-size: 15px;
@@ -512,6 +516,10 @@ body, html{
 	border-radius: 5px;
 	margin-right: 100px;
 	margin-bottom: 40px;
+}
+.form textarea:hover{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	 transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
 }
 .form textarea::placeholder{
 	padding-left: 20px;
@@ -578,14 +586,11 @@ body, html{
 	font-weight: 300;
 	letter-spacing: 1px;
 }
-.footer .column_wrap .column .first li h2{
-	margin: 0 0 0 40px;
 
-}
 .footer .column_wrap .column .first_column .social{
 	list-style: none;
 	padding: 0;
-	/*margin-left: 40px;*/
+	margin: 0;
 }
 .footer .column_wrap .column .second{
 	margin-left: 30px;
@@ -609,7 +614,7 @@ body, html{
 	height: 40px;
 	border-radius: 50%;
 	background-color: #ffffff;
-	margin:0 10px;
+	margin-right: 12px;
 	box-sizing: border-box;
 	text-align: center;
 	padding-top:8px;
@@ -627,7 +632,7 @@ body, html{
 	width:70px;
 	border:1px solid #e74c3c;
 	margin-bottom: 20px;
-	margin-left: 52px;
+	margin-left: 13px;
 }
 .footer .column_wrap .column .second li hr{
 	width:70px;
@@ -676,16 +681,7 @@ body, html{
 	margin:4px 0;
 }
 .footer .column_wrap .column .fourth ul li:first-child{
-	font-weight: 300;
-	font-size: 15px;
-}
-.footer .column_wrap .column .fourth ul li:nth-child(2){
-	font-weight: 300;
-	font-size: 14px;
-}
-.footer .column_wrap .column .fourth ul li:nth-child(3){
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: 400;
 }
 .footer .column_wrap .column .fourth ul li a{
 	text-decoration: none;
@@ -694,16 +690,16 @@ body, html{
 	color: #e74c3c;
 }
 .footer .email_wrap{
-	width:30%;
+	width:40%;
 	bottom: 50px;
-	left:40%;
+	left:33%;
 	position: absolute;
 }
 .footer .email_wrap input{
 	border-radius: 5px 0 0 5px;
 	margin:auto;
 	border:none;
-	width:200px;
+	width:240px;
 	height: 30px;
 }
 .footer .email_wrap input::placeholder{
@@ -739,4 +735,23 @@ body, html{
 	color:#ffffff;
 	font-weight: 400;
 	padding: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width:20px;
+  height: 20px;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+ }
+#myBtn i{
+	font-size: 35px;
+	color:#606060;
+}
+#myBtn:hover i{
+  color: #e74c3c;
 }

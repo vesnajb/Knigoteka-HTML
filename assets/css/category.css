@@ -371,13 +371,15 @@ body, html{
 .bck_category{
 	width: 100%;
 	background-color: #e6e6e6;
-	height: 2500px;
+	box-sizing: border-box;
 }
+
 .categories{
-	width:16%;
+	width:18%;
 	margin-left: 6%;
 	padding-top: 50px;
 	float:left;
+	margin-bottom: 60px;
 }
 .categories ul{
 	list-style: none;
@@ -387,44 +389,75 @@ body, html{
 .categories ul li{
 	padding: 10px 0;
 }
+.categories ul li:first-child{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.categories ul li:first-child a{
+	font-size: 19px;
+}
 .categories ul a{
 	text-decoration: none;
 	color:#303030;
 	font-size: 16px;
 	font-weight: 400;
-	
+	cursor: pointer;
 }
-.categories ul li:hover a{
+.categories ul li a:hover{
 	color:#e74c3c;
 }
-.books{
+
+.bck_category .books{
 	width:72%;
-	/*margin-left: 5%;*/
-	height: 562px;
-	float: left;
-	margin-top: 60px;
+	position: relative;
+ 	margin: auto;
+	top: 60px;
+	float:left;
+	margin-bottom: 60px;
 	
 }
-.books h2{
-	color:#303030;
-	font-size: 24px;
-	text-transform: uppercase;
+.bottom{
+	width:100%;
+	 background-color: #e6e6e6;
+	 height: 155px;
+}
+.bck_category .btns{
+	float:right;
+	margin-right: 7.5%;
+	margin-bottom: 60px;
+}
+.bck_category .btns .btn{
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  margin: 0 2px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  font-size: 18px;
+  border-style: none;
+  color:#606060;
+  border:1px solid #606060;
+}
+.bck_category .btns .active, .btn:hover {
+  background-color: #e74c3c;
+  color:#fff;
+   border:1px solid #e74c3c;
+}
+.books ul{
+	list-style: none;
 	margin: 0;
-	margin-left: 20px;
-	margin-bottom: 50px;
-	font-weight: 400;
-
+	padding: 0;
+}
+.books ul li{
+	float:left;
+	width:33%;
 }
 .books .book{
-	width:29%;
 	background-color: #fff;
-	float: left;
 	margin: 0 20px 60px 20px;
-	display: none;
 }
-/*.books .third{
-	margin-right: 0;
-}*/
 .books .book .book_wrap{
 	width:74.78%;
 	overflow: hidden;
@@ -445,7 +478,7 @@ body, html{
 	 transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
 }
 .books .book .buy{
-	width:20.88%;
+	width:29%;
 	height: 42px;
 	background-color: #e0dae2;
 	box-sizing: border-box;
@@ -454,14 +487,14 @@ body, html{
 	margin-top: -170px;
 	display: table-cell;
     vertical-align: middle;
+    box-sizing: border-box;
 }
 .books .book .buy .heart{
 	width:29.5%;
 	border-right: 1px solid #cecece;
 	float:left;
 	height: 42px;
-	display: table-cell;
-    vertical-align: middle;
+	text-align: center;
 }
 .books .book:hover .buy{
 	visibility: visible;
@@ -469,7 +502,9 @@ body, html{
 .books .book .buy .heart a i{
 	width:19px;
 	height: 18px;
-	margin:10% 40%;
+	margin:0;
+	padding: 0;
+	padding-top:15px;
 	color:#e74c3c;
 
 }	
@@ -480,7 +515,7 @@ body, html{
 	color:#ffffff;
 }
 .books .book .buy .cart{
-	width:70.25%;
+	width:70%;
 	float:left;
 	margin:0 auto;
 	text-align: center;
@@ -492,10 +527,10 @@ body, html{
 	font-size: 18px;
 	color:#e74c3c;
 	float:left;
-	margin:13px 0 13px 20%;
+	margin:13px 0 13px 22%;
 }
 .books .book .buy .cart h3{
-	margin:13px 0 0 2%;
+	margin:13px 0 0 15px;
 	padding: 0;
 	font-size: 14px;
 	color:#e74c3c;
@@ -550,7 +585,9 @@ body, html{
 	color:#303030;
 	font-weight: 500;
 }
-
+.cleaner{
+	clear: both;
+}
 /*footer*/
 .footer{
 	width:100%;
@@ -592,14 +629,11 @@ body, html{
 	font-weight: 300;
 	letter-spacing: 1px;
 }
-.footer .column_wrap .column .first li h2{
-	margin: 0 0 0 40px;
 
-}
 .footer .column_wrap .column .first_column .social{
 	list-style: none;
 	padding: 0;
-	/*margin-left: 40px;*/
+	margin: 0;
 }
 .footer .column_wrap .column .second{
 	margin-left: 30px;
@@ -623,7 +657,7 @@ body, html{
 	height: 40px;
 	border-radius: 50%;
 	background-color: #ffffff;
-	margin:0 10px;
+	margin-right: 12px;
 	box-sizing: border-box;
 	text-align: center;
 	padding-top:8px;
@@ -641,7 +675,7 @@ body, html{
 	width:70px;
 	border:1px solid #e74c3c;
 	margin-bottom: 20px;
-	margin-left: 52px;
+	margin-left: 13px;
 }
 .footer .column_wrap .column .second li hr{
 	width:70px;
@@ -690,16 +724,7 @@ body, html{
 	margin:4px 0;
 }
 .footer .column_wrap .column .fourth ul li:first-child{
-	font-weight: 300;
-	font-size: 15px;
-}
-.footer .column_wrap .column .fourth ul li:nth-child(2){
-	font-weight: 300;
-	font-size: 14px;
-}
-.footer .column_wrap .column .fourth ul li:nth-child(3){
-	font-weight: 300;
-	font-size: 14px;
+	font-weight: 400;
 }
 .footer .column_wrap .column .fourth ul li a{
 	text-decoration: none;
@@ -708,16 +733,16 @@ body, html{
 	color: #e74c3c;
 }
 .footer .email_wrap{
-	width:30%;
+	width:40%;
 	bottom: 50px;
-	left:40%;
+	left:33%;
 	position: absolute;
 }
 .footer .email_wrap input{
 	border-radius: 5px 0 0 5px;
 	margin:auto;
 	border:none;
-	width:200px;
+	width:240px;
 	height: 30px;
 }
 .footer .email_wrap input::placeholder{
@@ -753,4 +778,23 @@ body, html{
 	color:#ffffff;
 	font-weight: 400;
 	padding: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width:20px;
+  height: 20px;
+  border:none;
+  background-color:transparent;
+  cursor: pointer;
+ }
+#myBtn i{
+	font-size: 35px;
+	color:#606060;
+}
+#myBtn:hover i{
+  color: #e74c3c;
 }
