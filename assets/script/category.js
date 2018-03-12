@@ -5,6 +5,7 @@ function display(n){
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "block";
+			document.getElementById("naslov").innerHTML = "";
 		}
 		for(i=0; i<12; i++){
 			books[i].style.display = "block";
@@ -24,9 +25,8 @@ function display(n){
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "none";
+			document.getElementById("naslov").innerHTML = "Белетристика";
 		}
-		
-		
 	}else if(n==2){
 		y = document.querySelectorAll(".book");
 		for(i=0; i<y.length; i++){
@@ -36,6 +36,8 @@ function display(n){
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "none";
+			document.getElementById("naslov").innerHTML = "Стручна литература";
+
 		}
 		
 // 	}else if(n==3){
@@ -49,9 +51,6 @@ function display(n){
 // 		}
 // }
 }};
-
- // slides[index-1].style.display = "flex";  
- //        dots[index-1].className += " active";
 
 
 var books = document.getElementsByClassName("book");
