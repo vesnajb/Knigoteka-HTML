@@ -172,7 +172,6 @@ body, html{
 }
 .main_menu .main_nav_wrap{
 	float:right;
-
 }
 .main_menu .main_nav_wrap .main_nav{
 	list-style: none;
@@ -182,7 +181,6 @@ body, html{
 	position: relative;
     z-index: 5;
     height: auto;
-
 }
 .main_menu .main_nav_wrap .main_nav li{
 	float:left;

@@ -4,6 +4,9 @@ body, html{
 	font-family: 'roboto';
 	box-sizing:border-box;
 }
+#focus{
+	color:#e74c3c;
+}
 .menu{
 	width:100%;
 	padding: 15px 0px;
@@ -363,7 +366,7 @@ body, html{
 	text-align: center;
 	margin:0;
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 300;
 	color:#e74c3c;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -401,7 +404,7 @@ body, html{
 	padding-top: 60px;
 }
 .contact .contact_info{
-	width:65%;
+	width:60%;
 	margin:0 auto;
 	height: 465px;
 	/*margin-left: 6.5%;*/
@@ -413,7 +416,6 @@ body, html{
 	padding: 0;
 	margin:0;
 	height: 465px;
-	margin-left: 40px;
 }
 .contact .contact_info .column ul{
 	list-style: none;

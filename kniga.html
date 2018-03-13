@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Книготека</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+	<link rel="favicon" href="assets/images/icons/favicon.png">
+	<link rel="stylesheet" type="text/css" href="assets/css/kniga.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
 	<script src="https://use.fontawesome.com/6ee5636378.js"></script>
-	<link rel="favicon" href="assets/images/icons/favicon.png">
 </head>
 <body>
 	<div class="menu">
@@ -57,7 +57,7 @@
 			<div class="main_nav_wrap">
 				<ul class="main_nav">
 					<li>
-						<a href="category.html">Категории</a>
+						<a id="focus" href="category.html">Категории</a>
 						<ul class="content">
 							<li>
 								<ul class="column_menu">
@@ -117,7 +117,7 @@
 				<li><a href="blog.html">Настани</a></li>
 				<li><a href="#">Акција</a></li>
 				<li><a href="#">Новитети</a></li>
-				<li><a id="focus" href="#">Контакт</a></li>
+				<li><a href="contact.html">Контакт</a></li>
 				<li>
 				   	<input autocomplete="off" type="text" name="search" placeholder="Пребарај..."/>
 				       	
@@ -127,58 +127,44 @@
 		</div>
 	</div>
 	<div class="parallax">
-		<h2>Контакт</h2>
-		</div>
-	<div class="contact">
-	<div class="contact_info">
-		<ul class="column">
-				<li><h2>Контакт</h2></li>
-				<li>
-					<ul>
-						<li>Адреса</li>
-						<hr>
-						<li>1107 Јане Сандански</li>
-					</ul>
-				</li>
-				<li>
-					<ul>	
-						<li>Работно време</li>
-						<hr>
-						<li>Понеделник - Сабота</li>
-						<li>10 - 21 часот</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li>Телефон</li>
-						<hr>
-						<li>00389 70 123 456</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li>E-mail</li>
-						<hr>
-						<li><a href="#">info@knigoteka.mk</a></li>
-					</ul>
-				</li>
-			</ul>
-		
-		<div class="form">
-			<form>
-				<input type="text" name="name" placeholder="Име *">
-				<input type="email" name="email" placeholder="E-mail *">
-				<input type="text" name="name" placeholder="Наслов">
-				<textarea placeholder="Порака"></textarea>
-				<button><a href="#">Испрати</a></button>
-			</form>
-		</div>
-		</div>
-		<div class="map_frame">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7053.768384565898!2d21.47303248964452!3d41.98429997231393!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smk!4v1520640311578" width="1248" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		</div>
-		<div class="footer">
+		<h2>Категории</h2>
+	</div>
+
+	<div class="book_bck">
+		<div class="book_container">
+		<div class="book fiction category">
+					<a href="kniga.html">
+					<div class="book_wrap">
+						<img src="assets/images/book1.png"">
+					</div>
+					</a>
+					<div class="text_buy">
+					<div class="book_text">
+						<a href="#"><h3>Мост преку вечноста</h3></a>
+						<a href="#"><h4>Ричард Бах</h4></a>
+						<a href="#"><h2>Цена: 300 МКД</h2></a>
+					</div>
+						<div class="buy">
+							<a href="#">
+								<div class="heart">
+								<a href="#"><i class="fa fa-heart"></i></a>
+							</div>
+							</a>
+							<a href="#">
+								<div class="cart">
+								<i class="fa fa-shopping-cart"></i>
+								<h3>Во кошничка</h3>
+								
+								</div>
+							</a>
+						</div>
+						</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="cleaner"></div>
+	<div class="footer">
 		<div class="column_wrap">
 		<div class="column">
 			<ul class="first_column first">
@@ -256,8 +242,6 @@
 		<h3>Copyright © 2018 Книготека Сите права се задржани</h3>
 	</div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></button>
-	<script type="text/javascript" src="assets/script/contact.js"></script>
+	<script type="text/javascript" src="assets/script/category.js"></script>
 </body>
 </html>
-	
-
