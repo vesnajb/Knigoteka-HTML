@@ -729,6 +729,7 @@ body, html{
 }
 .comment_field form{
 	margin-left: 20px;
+	width: 30%;
 }
 .comment_field h2{
 	color:#303030;
