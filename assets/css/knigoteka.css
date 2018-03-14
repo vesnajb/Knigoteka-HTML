@@ -372,6 +372,23 @@ body, html{
     display: table-cell;
     vertical-align: middle;
 }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 .book_list{
 	margin: 0px;
 	padding: 0px;
@@ -745,7 +762,7 @@ body, html{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     display: block;
     padding-top:80px;
     box-sizing: border-box;
@@ -875,7 +892,7 @@ body, html{
 }
 .category .cat_wrap .categories .first_cat h3{
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	color:#303030;
 	letter-spacing: 2px;
 	margin-bottom: 50px;
@@ -996,9 +1013,10 @@ body, html{
 	 overflow: hidden;
 }
 .blog .blog_wrap .blogs .first_blog .blog_img{
-	width:351px;
-	height: 281px;
+	width:80%;
+	height: 300px;
 	overflow: hidden;
+	margin: 0 auto;
 }
 .blog .blog_wrap .blogs .first_blog a img{
 	background-size: cover;
@@ -1009,6 +1027,10 @@ body, html{
   	-o-transition: 2s ease-out;
   	-ms-transition: 2s ease-out;
   	transition: 2s ease-out;
+}
+.blog .blog_wrap .blogs .first_blog .text_wrap{
+	width: 80%;
+	margin: 0 auto;
 }
 .blog .blog_wrap .blogs .first_blog .blog_img:hover img{
 	-webkit-transition: 2s ease-out;
@@ -1024,7 +1046,7 @@ body, html{
 }
 .blog .blog_wrap .blogs .first_blog h3{
 	text-align: left;
-	font-size: 16px;
+	font-size: 18px;
 	color:#303030;
 	margin-bottom: 10px;
 }
@@ -1036,14 +1058,17 @@ body, html{
 }
 .blog .blog_wrap .blogs .first_blog h6{
 	margin:0 0 15px 0;
+	font-size: 14px;
+	font-weight: 400;
 }
 .blog .blog_wrap .blogs .first_blog h4{
 	margin-bottom: 20px;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: 300;
 }
 .blog .blog_wrap .blogs .first_blog button{
 	margin:0 0 40px 0;
+	padding: 0;
 	border: none;
     outline: none;
     color: white;
@@ -1051,7 +1076,6 @@ body, html{
     font: inherit;
     margin: 0;
     margin-bottom: 58px;
-    margin-left:5px;
 }
 
 .blog .blog_wrap .blogs .first_blog button a{
@@ -1064,8 +1088,6 @@ body, html{
 	padding: 0;
 }
 .blog .blog_wrap .blogs .first_blog button:hover{
-	border:1px solid #e74c3c;
-	border-radius: 5px;
 	transform:scale(1.1, 1.1);
 	transition: all .5s ease-in-out;
 }

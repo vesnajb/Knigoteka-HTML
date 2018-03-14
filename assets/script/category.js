@@ -1,7 +1,8 @@
 var n = null;
-function display(n){
+function display(n, event){
 	if(n==0){
 		var x = document.querySelectorAll(".category");
+
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "block";
@@ -25,7 +26,7 @@ function display(n){
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "none";
-			document.getElementById("naslov").innerHTML = "Белетристика";
+			// document.getElementById("naslov").innerHTML = "Белетристика";
 		}
 	}else if(n==2){
 		y = document.querySelectorAll(".book");
@@ -36,7 +37,7 @@ function display(n){
 		for(i=0; i<x.length; i++){
 			x[i].style.display = "block";
 			document.querySelector(".bottom").style.display = "none";
-			document.getElementById("naslov").innerHTML = "Стручна литература";
+			// document.getElementById("naslov").innerHTML = "Стручна литература";
 
 		}
 		
@@ -69,34 +70,39 @@ function slides(m){
 	if(m==0){
 		for(i=0; i<12; i++){
 			books[i].style.display = "block";
-		  	}
+			btns[m].classList.add("active");
+		}
 		for(j=12; j<books.length; j++){
 			books[j].style.display = "none";
 		};
-		btns[m].className += " active";
-
-	  	btns[m].className = btns[m].className.replace(" active", "");
+		// btns[m].previousElementSibling.classList.remove("active");
+		btns[m].nextElementSibling.classList.remove("active");
+		btns[2].classList.remove("active");
 	} else if(m==1){
 		for (i=12; i<24; i++){
 			books[i].style.display = "block";
+			btns[m].classList.add("active");
 	  	}
 	  	for(i=0; i<12; i++){
 			books[i].style.display = "none";
+			btns[m].classList.add("active");
 		};
 		for(i=24; i<books.length; i++){
 			books[i].style.display = "none";
 		};
-		btns[m].className += " active";
-	  	btns[m].className = btns[m].className.replace(" active", "");
+		btns[m].previousElementSibling.classList.remove("active");
+		btns[m].nextElementSibling.classList.remove("active");
 	}else if(m==2){
 		for (i=24; i<books.length; i++){
-		books[i].style.display = "block";
+			books[i].style.display = "block";
+			btns[m].classList.add("active");
 	  	};
 	  	for(i=0; i<24; i++){
-		books[i].style.display = "none";
+			books[i].style.display = "none";
 		};
-		btns[m].className += " active";
-		btns[m].className = btns[m].className.replace(" active", "");
+		btns[m].previousElementSibling.classList.remove("active");
+		// btns[m].nextElementSibling.classList.remove("active");
+		btns[0].classList.remove("active");
 	}
 	
 	// btns[m].className += " active";
@@ -135,7 +141,7 @@ function slides(m){
 //   slides[slideIndex-1].style.display = "block";  
 //   btns[slideIndex-1].className += " active";
 // }
-// When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -146,7 +152,6 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

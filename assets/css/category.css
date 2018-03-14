@@ -371,19 +371,25 @@ body, html{
 	width: 100%;
 	background-color: #e6e6e6;
 	box-sizing: border-box;
+	padding-top: 60px;
 }
 
 .categories{
-	width:18%;
+	width:16%;
 	margin-left: 6%;
-	padding-top: 50px;
+	margin-right: 50px;
+	padding-top: 30px;
 	float:left;
 	margin-bottom: 60px;
+	background-color: #ffffff;
+	/*margin-top:100px;*/
+	padding-bottom: 40px;
 }
 .categories ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-left:40px;
 }
 .categories ul li{
 	padding: 10px 0;
@@ -410,12 +416,11 @@ body, html{
 	width:72%;
 	position: relative;
  	margin: auto;
-	top: 60px;
 	float:left;
 	margin-bottom: 60px;
-	
+	top:0;
 }
-#naslov{
+/*#naslov{
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -423,9 +428,8 @@ body, html{
 	margin: 0;
 	margin-left: 20px;
 	color:#e74c3c;
-	margin-bottom: 40px;
 	z-index: 10;
-}
+}*/
 .bottom{
 	width:100%;
 	 background-color: #e6e6e6;
@@ -467,6 +471,7 @@ body, html{
 .books .book{
 	background-color: #fff;
 	margin: 0 20px 60px 20px;
+	position: relative;
 }
 .books .book .book_wrap{
 	width:74.78%;
@@ -488,7 +493,7 @@ body, html{
 	 transition: box-shadow 200ms cubic-bezier(0.5,0.2,0.3,0.8);
 }
 .books .book .buy{
-	width:29%;
+	width:100%;
 	height: 42px;
 	background-color: #e0dae2;
 	box-sizing: border-box;

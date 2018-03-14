@@ -356,7 +356,7 @@ body, html{
 }
 .parallax {
     /* The image used */
-    background-image: url(../images/event.png);
+    background: url(../images/event.png) no-repeat center;
     /*opacity:0.5;*/
     /* Full height */
      min-height: 300px; 
