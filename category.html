@@ -131,23 +131,23 @@
 	</div>
 	<div class="bck_category">
 		<div class="categories">
-		<ul>
+		<ul class="list">
 			<li class="category" onclick="display(0)"><a nohref>Категории</a></li>
-			<li class="fiction" onclick="display(1)"><a nohref>Белетристика</a></li>
+			<li id="fic"  class="fiction" onclick="display(1)"><a nohref>Белетристика</a></li>
 			<li class="strucna" onclick="display(2)"><a nohref>Стручна литература</a></li>
-			<li class="classic" onclick="display(3)"><a href="#">Класична литература</a></li>
-			<li class="psiho" onclick="display(4)"><a href="#">Психологија</a></li>
-			<li class="poetry" onclick="display(5)"><a href="#">Поезија</a></li>
-			<li class="bussines" onclick="display(6)"><a href="#">Бизнис</a></li>
+			<li class="classic" onclick="display(3)"><a nohref>Класична литература</a></li>
+			<li class="psiho" onclick="display(4)"><a nohref>Психологија</a></li>
+			<li class="poetry" onclick="display(5)"><a nohref>Поезија</a></li>
+			<li class="bussines" onclick="display(6)"><a nohref>Бизнис</a></li>
 			<li class="dictionary" onclick="display(7)"><a nohref>Речници и лексикони</a></li>
 			<li class="atlas" onclick="display(8)"><a nohref>Енциклопедии и атласи</a></li>
-			<li class="maps" onclick="display(9)"><a nohref>Карти и мапи</a></li>
-			<li class="tourism" onclick="display(10)"><a nohref>Туризам</a></li>
-			<li class="food" onclick="display(11)"><a nohref>Готвачи, храна и вино</a></li>
-			<li class="health" onclick="display(12)"><a nohref>Диета, здравје и фитнес</a></li>
-			<li class="young" onclick="display(13)"><a nohref>Книги за млади</a></li>
-			<li class="kids" onclick="display(14)"><a nohref>Книги за деца</a></li>
-			<li class="school" onclick="display(15)"><a nohref>Лектири</a></li>
+			<li class="kids" onclick="display(9)"><a nohref>Книги за деца</a></li>
+			<li class="young" onclick="display(10)"><a nohref>Книги за млади</a></li>
+			<li class="school" onclick="display(11)"><a nohref>Лектири</a></li>
+			<li class="tourism" onclick="display(12)"><a nohref>Туризам</a></li>
+			<li class="food" onclick="display(13)"><a nohref>Готвачи, храна и вино</a></li>
+			<li class="health" onclick="display(14)"><a nohref>Диета, здравје и фитнес</a></li>
+			<li class="maps" onclick="display(15)"><a nohref>Карти и мапи</a></li>
 			<li class="religion" onclick="display(16)"><a nohref>Филозофија и религија</a></li>
 			<li class="souvenir" onclick="display(17)"><a nohref>Сувенири</a></li>
 			<li class="coloring" onclick="display(18)"><a nohref>Боенки за возрасни</a></li>
@@ -164,18 +164,17 @@
 	</div>
 	<div class="books">
 		<ul>
-			<!-- <h2 id="naslov"></h2> -->
 			<li>
 				<div class="book fiction category">
-					<a href="kniga.html">
+					<a href="#">
 					<div class="book_wrap">
 						<img src="assets/images/book1.png"">
 					</div>
 					</a>
 					<div class="book_text">
-						<a href="#"><h3>Мост преку вечноста</h3></a>
-						<a href="#"><h4>Ричард Бах</h4></a>
-						<a href="#"><h2>Цена: 300 МКД</h2></a>
+						<a href="#"><h3>Снеговите на љубовта</h3></a>
+						<a href="#"><h4>Нермин Безмен</h4></a>
+						<a href="#"><h2>Цена: 199 МКД</h2></a>
 					</div>
 						<div class="buy">
 							<a href="#">
@@ -192,18 +191,75 @@
 							</a>
 						</div>
 				</div>
+							
 			</li>
 			<li>
-				<div class="book strucna category">
-				<a href="">
+				<div class="book fiction category">
+				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook5.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Десет илјади љубовници</h3></a>
+					<a href="#"><h4>Едит Равел</h4></a>
+					<a href="#"><h2>Цена: 290 МКД</h2></a>
+				</div>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+			</div>
+			</li>
+			<li>
+				<div class="book fiction category">
+				<a href="#">
+				<div class="book_wrap">
+					<img src="assets/images/gbook32.png"">
+				</div>
+				</a>
+				<div class="book_text">
+					<a href="#"><h3>Темјанушки во март</h3></a>
+					<a href="#"><h4>Сара Џио</h4></a>
+					<a href="#"><h2>Цена: 400 МКД</h2></a>
+				</div>
+					<div class="buy">
+						<a href="#">
+							<div class="heart">
+							<a href="#"><i class="fa fa-heart"></i></a>
+						</div>
+						</a>
+						<a href="#">
+							<div class="cart">
+							<i class="fa fa-shopping-cart"></i>
+							<h3>Во кошничка</h3>
+							
+							</div>
+						</a>
+					</div>
+			</div>
+			</li>
+			<li>
+				<div class="book fiction category">
+				<a href="#">
+				<div class="book_wrap">
+					<img src="assets/images/gbook1.png"">
+				</div>
+				</a>
+				<div class="book_text">
+					<a href="#"><h3>Принцезата Султана</h3></a>
+					<a href="#"><h4>Џин Сасон</h4></a>
+					<a href="#"><h2>Цена: 350 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -229,8 +285,8 @@
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
+					<a href="#"><h3>Мали црни лаги</h3></a>
+					<a href="#"><h4>Шерон Болтон</h4></a>
 					<a href="#"><h2>Цена: 490 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -246,20 +302,20 @@
 							
 							</div>
 						</a>
-					</div>
+				</div>
 			</div>
 			</li>
 			<li>
 				<div class="book strucna category">
-				<a href="#">
+				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/gbook1.png"">
+					<img src="assets/images/gbook33.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Вовед во космологија</h3></a>
+					<a href="#"><h4>Барбара Рајден</h4></a>
+					<a href="#"><h2>Цена: 650 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -279,71 +335,15 @@
 			</li>
 			<li>
 				<div class="book fiction category">
-				<a href="">
-				<div class="book_wrap">
-					<img src="assets/images/gbook2.png"">
-				</div>
-				</a>
-				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
-				</div>
-					<div class="buy">
-						<a href="#">
-							<div class="heart">
-							<a href="#"><i class="fa fa-heart"></i></a>
-						</div>
-						</a>
-						<a href="#">
-							<div class="cart">
-							<i class="fa fa-shopping-cart"></i>
-							<h3>Во кошничка</h3>
-							
-							</div>
-						</a>
-				</div>
-			</div>
-			</li>
-			<li>
-				<div class="book category">
-				<a href="">
-				<div class="book_wrap">
-					<img src="assets/images/gbook3.png"">
-				</div>
-				</a>
-				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
-					<a href="#"><h2>Цена: 490 МКД</h2></a>
-				</div>
-					<div class="buy">
-						<a href="#">
-							<div class="heart">
-							<a href="#"><i class="fa fa-heart"></i></a>
-						</div>
-						</a>
-						<a href="#">
-							<div class="cart">
-							<i class="fa fa-shopping-cart"></i>
-							<h3>Во кошничка</h3>
-							
-							</div>
-						</a>
-					</div>
-			</div>
-			</li>
-			<li>
-				<div class="book category">
 				<a href="#">
 				<div class="book_wrap">
-					<img src="assets/images/gbook9.png"">
+					<img src="assets/images/choose3.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Засекогаш</h3></a>
+					<a href="#"><h4>Сузана Тамаро</h4></a>
+					<a href="#"><h2>Цена: 500 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -362,16 +362,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book school category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/gbook7.png"">
+					<img src="assets/images/lektira.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Хајди</h3></a>
+					<a href="#"><h4>Јохана Шпири</h4></a>
+					<a href="#"><h2>Цена: 190 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -390,16 +390,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book poetry category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/book_shelf1.png"">
+					<img src="assets/images/poetry1.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
-					<a href="#"><h2>Цена: 490 МКД</h2></a>
+					<a href="#"><h3>Пловејќи кон зајдисонце</h3></a>
+					<a href="#"><h4>Денис Апостолов</h4></a>
+					<a href="#"><h2>Цена: 200 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -418,16 +418,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book atlas category">
 				<a href="#">
 				<div class="book_wrap">
-					<img src="assets/images/gbook6.png"">
+					<img src="assets/images/encik.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Енциклопедија</h3></a>
+					<a href="#"><h4>//</h4></a>
+					<a href="#"><h2>Цена: 3300 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -446,16 +446,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book fiction category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/book_shelf3.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Празни улици</h3></a>
+					<a href="#"><h4>Михал Ајваз</h4></a>
+					<a href="#"><h2>Цена: 290 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -474,16 +474,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book poetry category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/book_shelf1.png"">
+					<img src="assets/images/poetry2.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
-					<a href="#"><h2>Цена: 490 МКД</h2></a>
+					<a href="#"><h3>Пресадување на ружата</h3></a>
+					<a href="#"><h4>Ана Димишковска</h4></a>
+					<a href="#"><h2>Цена: 290 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -502,16 +502,16 @@
 				</div>
 			</li>
 			<li>
-				<div class="book fiction category">
+				<div class="book bussines category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook12.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Фокусираност</h3></a>
+					<a href="#"><h4>Даниел Големан</h4></a>
+					<a href="#"><h2>Цена: 600 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -530,16 +530,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book strucna category">
+				<div class="book school category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/gbook4.png"">
+					<img src="assets/images/lektira2.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>20000 милји под морето</h3></a>
+					<a href="#"><h4>Жил Верн</h4></a>
+					<a href="#"><h2>Цена: 250 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -565,9 +565,9 @@
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
-					<a href="#"><h2>Цена: 490 МКД</h2></a>
+					<a href="#"><h3>Во еден момент</h3></a>
+					<a href="#"><h4>Гијом Мисо</h4></a>
+					<a href="#"><h2>Цена: 400 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -586,7 +586,7 @@
 			</div>
 			</li>
 			<li>
-				<div class="book strucna category">
+				<div class="book fiction category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/book_blog2.png"">
@@ -614,16 +614,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book fiction category">
+				<div class="book classic category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/gbook10.png"">
+					<img src="assets/images/classic1.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Богородичната црква во Париз</h3></a>
+					<a href="#"><h4>Виктор Иго</h4></a>
+					<a href="#"><h2>Цена: 590 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -642,15 +642,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book classic category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/book_shelf2.png"">
+					<img src="assets/images/classic2.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
+					<a href="#"><h3>Роман за Тристан и Изолда</h3></a>
+					<a href="#"><h4>Жозеф Бедие</h4></a>
 					<a href="#"><h2>Цена: 490 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -670,16 +670,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book bussines category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook13.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Деловна комуникација</h3></a>
+					<a href="#"><h4>Томас Л. МИнс</h4></a>
+					<a href="#"><h2>Цена: 800 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -698,16 +698,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book food category">
 				<a href="">
 				<div class="book_wrap">
-					<img src="assets/images/book6.png"">
+					<img src="assets/images/gotvac.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Солени и пикантни јадења</h3></a>
+					<a href="#"><h4>//</h4></a>
+					<a href="#"><h2>Цена: 290 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -725,15 +725,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book coloring category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook15.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
+					<a href="#"><h3>Креативни цртежи</h3></a>
+					<a href="#"><h4>//</h4></a>
 					<a href="#"><h2>Цена: 490 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -753,16 +753,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book kids category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook17.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Шумската принцеза</h3></a>
+					<a href="#"><h4>Првољуб Лилчиќ</h4></a>
+					<a href="#"><h2>Цена: 200 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -781,16 +781,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book kids category">
 				<a href="">
 				<div class="book_wrap">
 					<img src="assets/images/gbook18.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Белата светлина во Париз</h3></a>
-					<a href="#"><h4>Тереза Ревај</h4></a>
-					<a href="#"><h2>Цена: 390 МКД</h2></a>
+					<a href="#"><h3>Безбеден детски свет</h3></a>
+					<a href="#"><h4>Јадранка Клисарова</h4></a>
+					<a href="#"><h2>Цена: 190 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -809,16 +809,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book kids category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook19.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Во канџите на тигарот</h3></a>
-					<a href="#"><h4>Џон Спид</h4></a>
-					<a href="#"><h2>Цена: 490 МКД</h2></a>
+					<a href="#"><h3>Било и се скрило</h3></a>
+					<a href="#"><h4>Киро Донев</h4></a>
+					<a href="#"><h2>Цена: 150 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -837,16 +837,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book health category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook21.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Книга за телото</h3></a>
+					<a href="#"><h4>Камерон Дијаз</h4></a>
+					<a href="#"><h2>Цена: 700 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -865,15 +865,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book health category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook20.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
+					<a href="#"><h3>Лекување си билки</h3></a>
+					<a href="#"><h4>Јован Туцаков</h4></a>
 					<a href="#"><h2>Цена: 300 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -893,15 +893,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book young category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook22.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
+					<a href="#"><h3>Дневникот на едно смотано девојче</h3></a>
+					<a href="#"><h4>Рејчел Рене Расел</h4></a>
 					<a href="#"><h2>Цена: 300 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -921,15 +921,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book young category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook23.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
+					<a href="#"><h3>Дневникот на едно смотано девојче</h3></a>
+					<a href="#"><h4>Рејчел Рене Расел</h4></a>
 					<a href="#"><h2>Цена: 300 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -949,16 +949,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book dictionary category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook24.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Лексикон по физика</h3></a>
+					<a href="#"><h4>Виктор Урумов</h4></a>
+					<a href="#"><h2>Цена: 500 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -977,16 +977,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book psiho category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook25.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Моќта на концентрацијата</h3></a>
+					<a href="#"><h4>Терон К. Димон</h4></a>
+					<a href="#"><h2>Цена: 400 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1005,16 +1005,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book psiho category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook26.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Непријатното во културата</h3></a>
+					<a href="#"><h4>Сигмунд Фројд</h4></a>
+					<a href="#"><h2>Цена: 400 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1033,16 +1033,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book tourism category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook27.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Стратегиски менаџмент</h3></a>
+					<a href="#"><h4>Луиз Мутињо</h4></a>
+					<a href="#"><h2>Цена: 800 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1061,16 +1061,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book bussines category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook28.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Кетеринг-Менаџмент</h3></a>
+					<a href="#"><h4>Ненси Ломан Скенлон</h4></a>
+					<a href="#"><h2>Цена: 600 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1089,16 +1089,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book psiho category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook29.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 300 МКД</h2></a>
+					<a href="#"><h3>Развој на интуицијата</h3></a>
+					<a href="#"><h4>Свами Кријананда</h4></a>
+					<a href="#"><h2>Цена: 500 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1117,16 +1117,16 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book coloring category">
 				<a href="#">
 				<div class="book_wrap">
-					<img src="assets/images/gbook30.png"">
+					<img src="assets/images/gbook16.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
-					<a href="#"><h2>Цена: 2690 МКД</h2></a>
+					<a href="#"><h3>Боенка за добра ноќ</h3></a>
+					<a href="#"><h4>//</h4></a>
+					<a href="#"><h2>Цена: 290 МКД</h2></a>
 				</div>
 					<div class="buy">
 						<a href="#">
@@ -1145,15 +1145,15 @@
 			</div>
 			</li>
 			<li>
-				<div class="book category">
+				<div class="book atlas category">
 				<a href="#">
 				<div class="book_wrap">
 					<img src="assets/images/gbook31.png"">
 				</div>
 				</a>
 				<div class="book_text">
-					<a href="#"><h3>Мост преку вечноста</h3></a>
-					<a href="#"><h4>Ричард Бах</h4></a>
+					<a href="#"><h3>Атлас на истражувањата</h3></a>
+					<a href="#"><h4>//</h4></a>
 					<a href="#"><h2>Цена: 3720 МКД</h2></a>
 				</div>
 					<div class="buy">
@@ -1176,11 +1176,11 @@
 		</div>
 		<div class="cleaner"></div>
 		<div class="bottom">
-		<div class="btns">
-				<button class="btn" onclick="slides(0)">1</button>
-				<button class="btn" onclick="slides(1)">2</button>
-				<button class="btn" onclick="slides(2)">3</button>
-		</div>	
+			<div class="btns">
+					<button class="btn" onclick="slides(0)">1</button>
+					<button class="btn" onclick="slides(1)">2</button>
+					<button class="btn" onclick="slides(2)">3</button>
+			</div>	
 		</div>
 	</div>
 	<div class="cleaner"></div>

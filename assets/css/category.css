@@ -375,27 +375,29 @@ body, html{
 }
 
 .categories{
-	width:16%;
+	width:18%;
 	margin-left: 6%;
-	margin-right: 50px;
+	margin-right: 40px;
 	padding-top: 30px;
 	float:left;
 	margin-bottom: 60px;
 	background-color: #ffffff;
 	/*margin-top:100px;*/
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 .categories ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-left:40px;
+	margin-left:30px;
 }
 .categories ul li{
 	padding: 10px 0;
 }
 .categories ul li:first-child{
 	text-transform: uppercase;
+	padding: 0;
+	margin:0;
 	margin-bottom: 10px;
 }
 .categories ul li:first-child a{
@@ -420,24 +422,15 @@ body, html{
 	margin-bottom: 60px;
 	top:0;
 }
-/*#naslov{
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-	padding: 0;
-	margin: 0;
-	margin-left: 20px;
-	color:#e74c3c;
-	z-index: 10;
-}*/
 .bottom{
 	width:100%;
-	 background-color: #e6e6e6;
-	 height: 155px;
+	background-color: #e6e6e6;
+	height: 155px;
 }
 .bck_category .btns{
+	/*width: 15%;*/
 	float:right;
-	margin-right: 7.5%;
+	margin-right: 6%;
 	margin-bottom: 60px;
 }
 .bck_category .btns .btn{
@@ -473,11 +466,12 @@ body, html{
 	margin: 0 20px 60px 20px;
 	position: relative;
 }
+
 .books .book .book_wrap{
-	width:74.78%;
+	width:75%;
 	overflow: hidden;
 	margin:0 auto;
-	padding: 45px 30px 0 30px;
+	padding: 30px 30px 0 30px;
 }
 .books .book:hover .book_wrap{
 	transform: scale(1.05,1.05);
@@ -778,7 +772,7 @@ body, html{
     font-weight: 500;
     position: relative;
     cursor: pointer;
-    /*top: 1px;*/
+    top: 1px;
 }
 .copyright{
 	width: 100%;

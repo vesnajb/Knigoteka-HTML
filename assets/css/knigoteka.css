@@ -368,7 +368,7 @@ body, html{
 }
 
 .slider .slide_wrap .slide .book_wrap .name{
-	padding: 0px 0px 0px 90px;
+	padding: 0px 0px 0px 120px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -576,7 +576,6 @@ body, html{
 
 .choose{
 	width: 100%;
-	height: 820px;
 	background-color: #e9e9e9;
 
 }
@@ -602,7 +601,7 @@ body, html{
 }	
 .choose .book_slider .book_slides{
 	float:left;
-	width:3840px;
+	width:300%;
 	margin-left: 0;
 	margin-bottom: 60px;
 	transition: all .3s ease-in-out;
@@ -612,6 +611,7 @@ body, html{
   cursor: pointer;
   position: absolute;
   top:0;
+  z-index: 10;
   width: auto;
   padding: 250px 15px;
   margin-top: -22px;
@@ -633,42 +633,50 @@ body, html{
 }
 
 .choose .book_slider .book_slides .book{
-	width:380px;
-	height: 570px;
+	width:6.8%;
 	background-color: #fff;
-	padding: 40px;
+	padding: 0.8%;
 	box-sizing: border-box;
 	text-align: center;
 	float:left;
-	margin:0 45px;
+	margin:0 0.765%;
+	position: relative;
 }
 .choose .book_slider .book_slides .book .book_img{
-
+	width:100%;
+	margin:0 auto;
 }
-.choose .book_slider .book_slides .book:first-child{
-	margin-left: 50px;
-}
-.choose .book_slider .book_slides .book:last-child{
-	margin-right: 50px;
+.choose .book_slider .book_slides .book .book_img img{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 25px;
 }
 .choose .book_slider .book_slides .book:hover{
-	 box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-	 transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
+	 box-shadow: 0px 5px 5px 3px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.1);
+	 transition: box-shadow 200ms cubic-bezier(0.5,0.2,0.3,0.8);
+}
+.choose .book_slider .book_slides .book:hover .book_img{
+	transform: scale(1.05,1.05);
+	transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
 }
 .choose .book_slider .book_slides .book .buy{
-	width:380px;
+	width:100%;
 	height: 42px;
 	background-color: #e0dae2;
 	box-sizing: border-box;
-	margin:-162px -40px;
+	margin:-135px -32.5px;
 	position: absolute;
 	display: none;
+	box-sizing: border-box;
 }
 .choose .book_slider .book_slides .book .buy .heart{
-	width:100px;
+	width:30%;
 	border-right: 1px solid #cecece;
 	float:left;
-	
+	text-align: center;
+	box-sizing: border-box;
 }
 .choose .book_slider .book_slides .book:hover .buy{
 	display: block;
@@ -676,7 +684,7 @@ body, html{
 .choose .book_slider .book_slides .book .buy .heart a i{
 	width:19px;
 	height: 18px;
-	margin:12px 40px 12px 40px;
+	margin:12px 0;
 	color:#e74c3c;
 }	
 .choose .book_slider .book_slides .book .buy .heart:hover{
@@ -686,25 +694,33 @@ body, html{
 	color:#ffffff;
 }
 .choose .book_slider .book_slides .book .buy .cart{
-	width:279px;
-	float:left;
-	margin:0 auto;
-	text-align: center;
+	width:70%;
+	float:right;
+	box-sizing: border-box;
+	height: 42px;
 } 
-
+.choose .book_slider .book_slides .book .buy .cart .cart_wrap{
+	width:65%;
+	margin: 0 auto;
+	margin-top: 12px;
+}
 .choose .book_slider .book_slides .book .buy .cart i{
 	font-size: 18px;
 	color:#e74c3c;
 	float:left;
-	margin:12px 0 12px 70px;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
+	/*margin:12px 0 12px 70px;*/
 }
 .choose .book_slider .book_slides .book .buy .cart h3{
-	margin:12px 0 0 60px;
+	margin:0;
 	padding: 0;
 	font-size: 15px;
 	color:#e74c3c;
-	font-weight: 600;
-	width: 150px;
+	font-weight: 500;
+	float:left;
+	
 }
 .choose .book_slider .book_slides .book .buy .cart:hover{
 	background-color:#e74c3c;
@@ -715,17 +731,14 @@ body, html{
 .choose .book_slider .book_slides .book .buy .cart:hover h3{
 	color:#ffffff;
 }
-.choose .book_slider .book_slides .book img{
-	margin-bottom: 30px;
-
-}
 .choose .book_slider .book_slides .book a{
 	text-decoration: none;
 }
 .choose .book_slider .book_slides .book h3{
 	margin:0;
-	font-size: 18px;
+	font-size: 16px;
 	color:#303030;
+	font-weight: 500;
 }
 .choose .book_slider .book_slides .book h3:hover{
 	color:#e74c3c;
@@ -737,25 +750,17 @@ body, html{
 	color:#e74c3c;
 }
 .choose .book_slider .book_slides .book h4{
-	margin:10px 0px 0px 0px;
-	font-size: 16px;
+	margin:8px 0px 0px 0px;
+	font-size: 14px;
 	color:#76777b;
 	font-weight: 400;
 }
 .choose .book_slider .book_slides .book h2{
 	margin:15px 0px 0px 0px;
-	font-size: 17px;
+	font-size: 16px;
 	color:#303030;
 	font-weight: 500;
 }
-
-/*.cleaner{
-	clear: both;
-}*/
-/*.banner{
-	width:100%;
-	height: 400px;
-}*/
 .parallax_one {
     background-image: url(../images/banner.png);
     min-height: 400px; 
@@ -1006,15 +1011,15 @@ body, html{
 	width:100%;
 }
 .blog .blog_wrap .blogs .first_blog{
-	width:26%;
+	width:25%;
 	float:left;
-	margin:0 2%;
+	margin:0 30px;
 	box-sizing: border-box;
 	 overflow: hidden;
 }
 .blog .blog_wrap .blogs .first_blog .blog_img{
-	width:80%;
-	height: 300px;
+	width:100%;
+	height: 270px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -1029,8 +1034,7 @@ body, html{
   	transition: 2s ease-out;
 }
 .blog .blog_wrap .blogs .first_blog .text_wrap{
-	width: 80%;
-	margin: 0 auto;
+	width: 100%;
 }
 .blog .blog_wrap .blogs .first_blog .blog_img:hover img{
 	-webkit-transition: 2s ease-out;
@@ -1278,7 +1282,7 @@ body, html{
     font-weight: 500;
     position: relative;
     cursor: pointer;
-    /*top: 1px;*/
+    top: 1px;
 }
 .copyright{
 	width: 100%;

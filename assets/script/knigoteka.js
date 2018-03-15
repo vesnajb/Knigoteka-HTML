@@ -49,20 +49,20 @@ var marginPosition = 0;
    function changeBook(n){
     if(n<0){
         if(marginPosition==0){
-            marginPosition -= 2400;
-            document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
+            marginPosition -= 200;
+            document.querySelector(".book_slides").style.marginLeft = marginPosition + '%';
         }else{
-        marginPosition += 480;
-        document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
+        marginPosition += 25;
+        document.querySelector(".book_slides").style.marginLeft = marginPosition + '%';
         }
     }else{
-        marginPosition -= 480;
-        document.querySelector(".book_slides").style.marginLeft = marginPosition + 'px';
+        marginPosition -= 25;
+        document.querySelector(".book_slides").style.marginLeft = marginPosition + '%';
     }
-    if(marginPosition > 2400){
+    if(marginPosition > 200){
         marginPosition = 0;
         document.querySelector(".book_slides").style.marginLeft = 0;
-    }else if(marginPosition < -2400){
+    }else if(marginPosition < -200){
         marginPosition = 0;
         document.querySelector(".book_slides").style.marginLeft = 0;
     } 
