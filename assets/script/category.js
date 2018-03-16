@@ -356,6 +356,24 @@ function slides(m){
 };
 
 
+
+var colorChanger = function(e){
+	var list = document.querySelectorAll(".list li");
+	// e.preventDefault();
+	for(i=0; i<list.length; i++){
+		list[i].classList.remove('active');
+	}
+
+	if(e.type = 'click'){
+		this.classList.add('active');
+	}
+}
+var list = document.querySelectorAll(".list li");
+for(i=0; i<list.length; i++){
+	list[i].addEventListener('click', colorChanger);
+}
+
+
 function on() {
     document.getElementById("overlay").style.display = "block";
 }

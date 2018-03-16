@@ -107,7 +107,7 @@ body, html{
 .menu ul i{
 	color:#828282;
 	font-size: 15px;
-	padding:0 7px;
+	padding:0 7px 0 0;
 	float: left;
 }
 .menu .arrow{
