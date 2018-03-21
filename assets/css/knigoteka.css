@@ -3,6 +3,8 @@ body, html{
 	margin:0;
 	font-family: 'roboto';
 	box-sizing:border-box;
+	width: 100%;
+	height: 100%;
 }
 .menu{
 	width:100%;
@@ -150,6 +152,10 @@ body, html{
 	width:100%;
 	background-color: #ffffff;
 	height: 80px;
+	display: block;
+}
+.navigation .burger_menu{
+	display: none;
 }
 .main_menu_wrapper{
 	width:90%;

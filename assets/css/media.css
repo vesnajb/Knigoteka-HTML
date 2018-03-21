@@ -1,3 +1,88 @@
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+/*@media only screen and (min-width: 320px) and (max-width: 480px) {
 	
+}*/
+
+@media all and (max-width: 1690px){
+	.main_menu .main_nav_wrap .main_nav li:first-child .content{
+	width:750px;
+	
+}
+}
+@media all and (max-width: 1280px){
+	
+	.main_menu .main_nav_wrap .main_nav li:first-child .content{
+	width:650px;
+	
+}
+	.main_menu .logo a{
+	width:130px;
+	height:64px;
+	margin:0;
+	padding: 0;
+	background:url("../images/knigoteka-logo.png");
+	display: inline-block;
+	background-size: 100%;
+}
+	.main_menu .main_nav_wrap .main_nav li a{
+	text-decoration: none;
+	color:#606060;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: block;
+	align-items:center;
+	padding: 30px 10px;
+}
+.main_menu .main_nav_wrap .main_nav li input[type=text] {
+  float:right;
+  right: 0;
+  width: 45px;
+  padding: 0;
+  box-sizing: border-box;
+  border:none;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  background-image: url("../images/icons/search.png");
+  background-position: 10px 10px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding: 10px 15px 10px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: absolute;
+  margin-top: 19px;
+  cursor: pointer;
+}
+}
+@media all and (max-width: 980px){
+	.main_menu .main_nav_wrap .main_nav li a{
+	text-decoration: none;
+	color:#606060;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: block;
+	align-items:center;
+	padding: 30px 10px;
+}
+.main_menu .main_nav_wrap .main_nav li:first-child .content{
+	width:550px;
+	
+}
+}
+@media all and (max-width: 736px){
+	.navigation .main_menu{
+		display: none;
+	}
+	.navigation .burger_menu{
+		display: block;
+	}
+	
+}
+@media all and (max-width: 480px){
+	.navigation .main_menu{
+		display: none;
+	}
+	.navigation .burger_menu{
+		display: block;
+	}
 }
