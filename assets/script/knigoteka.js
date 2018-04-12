@@ -42,8 +42,18 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
+// var burger = document.querySelector(".trigger_burger");
 
+// burger.addEventListener('click', show());
 
+// function show(){
+//     if(document.querySelector(".burger_drop").style.visibility = "hidden"){
+//        document.querySelector(".burger_drop").style.visibility = "visible";
+//     }else{
+//         document.querySelector(".burger_drop").style.visibility = "hidden";
+//     }
+//     } 
+    
 
 var marginPosition = 0;
    function changeBook(n){
